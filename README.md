@@ -47,9 +47,9 @@ Ce dépôt rassemble tous les éléments de l’identité, version du 13 novembr
 | 1 | 09.11 | Dîner | Marie-Pierre Vedrenne |
 | 2 | 17.11 | Dîner | Olivier Faure |
 | 3 | 18.11 | Petit-déjeuner | Éric Lombard |
-| 4 | 19.11 | Dîner | Jérôme Guedj |
-| 5 | 24.11 | Dîner | Valérie Pécresse |
-| 6 | 25.11 | Petit-déjeuner | Matthieu Landon |
+| 4 | 24.11 | Dîner | Valérie Pécresse |
+| 5 | 25.11 | Petit-déjeuner | Matthieu Landon |
+| 6 | 02.12 | Dîner | Jérôme Guedj |
 | 7 | 03.12 | Dîner | Karim Zéribi |
 | 8 | 09.12 | Dîner | Agnès Buzyn |
 | 9 | 15.12 | Dîner | Jacques Attali |

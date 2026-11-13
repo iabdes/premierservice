@@ -202,7 +202,7 @@ c.append(save("c3-04", "".join(o)))
 o = [frame(5, n)]
 o.append(T(XB, "Saison 1 : douze invités.", 76, M, 320, BLUE))
 o.append(T(MED, "Novembre et décembre 2026", 38, M, 384, INK))
-SL = ["marie-pierre-vedrenne","olivier-faure","eric-lombard","jerome-guedj","valerie-pecresse","matthieu-landon","karim-zeribi","agnes-buzyn","jacques-attali","karim-bouamrane","naima-moutchou","bernard-cazeneuve"]
+SL = ["marie-pierre-vedrenne","olivier-faure","eric-lombard","valerie-pecresse","matthieu-landon","jerome-guedj","karim-zeribi","agnes-buzyn","jacques-attali","karim-bouamrane","naima-moutchou","bernard-cazeneuve"]
 for i, s in enumerate(SL):
     cx = 190 + (i % 4) * 233; cy = 560 + (i // 4) * 240
     o.append(portrait(s, cx, cy, 98, WHITE, f"g{i}"))

@@ -60,9 +60,9 @@ Police : Outfit (Google Fonts) 400 à 800. Titres 800, interlettrage −0,02 em.
 | 1 | 2026-11-09 | Dîner | Marie-Pierre Vedrenne | Ministre déléguée à la Citoyenneté | marie-pierre-vedrenne |
 | 2 | 2026-11-17 | Dîner | Olivier Faure | Premier secrétaire du Parti socialiste | olivier-faure |
 | 3 | 2026-11-18 | Petit-déjeuner | Éric Lombard | Ancien ministre de l’Économie | eric-lombard |
-| 4 | 2026-11-19 | Dîner | Jérôme Guedj | Député de l’Essonne | jerome-guedj |
-| 5 | 2026-11-24 | Dîner | Valérie Pécresse | Présidente de la Région Île-de-France | valerie-pecresse |
-| 6 | 2026-11-25 | Petit-déjeuner | Matthieu Landon | Secrétaire général adjoint de l’Élysée | matthieu-landon |
+| 4 | 2026-11-24 | Dîner | Valérie Pécresse | Présidente de la Région Île-de-France | valerie-pecresse |
+| 5 | 2026-11-25 | Petit-déjeuner | Matthieu Landon | Secrétaire général adjoint de l’Élysée | matthieu-landon |
+| 6 | 2026-12-02 | Dîner | Jérôme Guedj | Député de l’Essonne | jerome-guedj |
 | 7 | 2026-12-03 | Dîner | Karim Zéribi | Ancien député européen | karim-zeribi |
 | 8 | 2026-12-09 | Dîner | Agnès Buzyn | Ancienne ministre de la Santé | agnes-buzyn |
 | 9 | 2026-12-15 | Dîner | Jacques Attali | Économiste et écrivain | jacques-attali |
