@@ -57,132 +57,181 @@ def save(name, body, bg=PAPER):
     p = OUT + name
     open(p + ".svg", "w").write(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}"><rect width="{W}" height="{H}" fill="{bg}"/>{body}</svg>')
     subprocess.run(["rsvg-convert", "-w", str(W), p + ".svg", "-o", p + ".png"], check=True); os.remove(p + ".svg"); return p + ".png"
-def argo_slide(prefix, i, n, cta):
-    o = [frame(i, n, True)]
-    t, y = para(XB, "Ce projet est soutenu par Les Argonautes.", 64, 96, 420, WHITE, 880, 1.08); o.append(t)
-    t, y = para(REG, "Cabinet de conseil et d’exécution dédié au secteur public.", 38, 96, y + 90, SB, 860, 1.3); o.append(t)
-    o.append(f'<rect x="96" y="{y+70:.0f}" width="560" height="{560*AR+56:.0f}" rx="24" fill="{PAPER}"/>')
-    o.append(f'<image href="{ARGO_C}" x="124" y="{y+98:.0f}" width="504" height="{504*AR:.0f}"/>')
-    o.append(T(SEMI, "lesargos.fr", 40, 96, y + 70 + 560*AR + 56 + 90, WHITE))
-    if cta: o.append(T(MED, cta, 30, 96, H - 120, SM))
-    return save(f"{prefix}-{i:02d}", "".join(o), BLUE)
+# ================= v2 : grille, progression, carte Argonautes « Gréement » =================
+PLEX = "fnt/PlexMono-Medium.ttf"
+ECUME, ABYSSE, ARGO, ARGO_T, GALET = "#F5F1E8", "#010101", "#F10F23", "#C40C1D", "#5C5A56"
+NAVY2 = "#2B3D97"   # pas de ton sur marine
+M = 88
+CONSEIL = b64("argo/conseil.jpg", "image/jpeg")
+def progress(i, n, dark, y=None):
+    y = H - 64 if y is None else y
+    g = 10; w = (W - 2*M - g*(n-1)) / n; o = []
+    for k in range(n):
+        on = k < i
+        col = (WHITE if on else "#4A5AA6") if dark else (BLUE if on else "#D6D9E6")
+        o.append(f'<rect x="{M + k*(w+g):.1f}" y="{y}" width="{w:.1f}" height="6" rx="3" fill="{col}"/>')
+    return "".join(o)
+def frame(i, n, dark=False, pdark=None):
+    o = [logo(72, 60, 200, dark)]
+    o.append(progress(i, n, dark if pdark is None else pdark))
+    return "".join(o)
+def arrow(x, y, s, c, sw=4):
+    return f'<path d="M{x} {y}h{s}M{x+s-s*0.38} {y-s*0.38}l{s*0.38} {s*0.38}-{s*0.38} {s*0.38}" stroke="{c}" stroke-width="{sw}" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'
+def swipe(dark=True):
+    c = WHITE if dark else BLUE
+    return T(SEMI, "Faites glisser", 30, W - M - 56, H - 112, c, "end") + arrow(W - M - 40, H - 122, 40, c)
+def chair(x, y, ang, u, col):
+    return f'<rect x="{x - G.CW*u/2:.1f}" y="{y - G.CH*u/2:.1f}" width="{G.CW*u:.1f}" height="{G.CH*u:.1f}" rx="{3.2*u:.1f}" fill="{col}" transform="rotate({ang:.1f} {x:.1f} {y:.1f})"/>'
+def lock(x, y, k, c, hole):
+    return f'<g transform="translate({x},{y}) scale({k})"><path d="M18 36V24a14 14 0 0 1 28 0v12" fill="none" stroke="{c}" stroke-width="7" stroke-linecap="round"/><rect x="8" y="36" width="48" height="38" rx="9" fill="{c}"/><circle cx="32" cy="52" r="5" fill="{hole}"/><rect x="29.5" y="54" width="5" height="10" rx="2.5" fill="{hole}"/></g>'
+def cover(title, sub):
+    o = [f'{G.table(905, 300, 760, NAVY2, RED)}', frame(1, n, True)]
+    lines = wrap(XB, title, 116, 900); y0 = 1000 - (len(lines)-1)*116*1.0
+    t, y = para(XB, title, 116, M, y0, WHITE, 900, 1.0); o.append(t)
+    o.append(T(MED, sub, 38, M, y + 86, SB)); o.append(swipe())
+    return "".join(o)
+
+def argo_card(prefix, i, n, tall=False):
+    """Carte de fin : charte Gréement des Argonautes posée dans le cadre Premier Service."""
+    Hh = 1920 if tall else 1350
+    s = 1.0
+    o = [logo(72, 60, 200, False)]
+    py = 300 if tall else 230
+    o.append(f'<rect x="{M}" y="{py-11}" width="44" height="3" fill="{ARGO_T}"/>' + T(PLEX, "PARTENAIRE DU PROJET", 24, M + 64, py, ARGO_T, track=0.14))
+    iy = py + 44; ih = 820 if tall else 500; iw = W - 2*M
+    sc = max(iw * 1.55 / 1672, ih * 1.05 / 941); vw, vh = 1672*sc, 941*sc
+    fx, fy = 0.70, 0.70
+    ix = M + iw/2 - fx*vw; iy2 = iy + ih/2 - fy*vh
+    ix = min(M, max(M + iw - vw, ix)); iy2 = min(iy, max(iy + ih - vh, iy2))
+    o.append(f'<clipPath id="fr{prefix}"><rect x="{M}" y="{iy}" width="{iw}" height="{ih}" rx="24"/></clipPath>'
+             f'<image clip-path="url(#fr{prefix})" href="{CONSEIL}" x="{ix:.1f}" y="{iy2:.1f}" width="{vw:.1f}" height="{vh:.1f}"/>')
+    y = iy + ih + (110 if tall else 92)
+    o.append(T(SEMI, "Ce projet est soutenu par", 50 if tall else 46, M, y, ABYSSE))
+    lw = 700 if tall else 600
+    o.append(f'<image href="{ARGO_C}" x="{M-8}" y="{y + 34}" width="{lw}" height="{lw*AR:.0f}"/>')
+    y = y + 34 + lw*AR + (60 if tall else 44)
+    o.append(f'<rect x="{M}" y="{y:.0f}" width="{iw}" height="2" fill="{ABYSSE}"/><rect x="{M}" y="{y+7:.0f}" width="{iw}" height="2" fill="{ABYSSE}"/>')
+    t, y = para(REG, "Cabinet de conseil et d’exécution dédié au secteur public.", 36 if tall else 33, M, y + 70, GALET, iw, 1.3); o.append(t)
+    y += 84 if tall else 72
+    o.append(T(SEMI, "lesargos.fr", 46 if tall else 40, M, y, ARGO_T))
+    tw = wid(SEMI, "lesargos.fr", 46 if tall else 40)
+    o.append(arrow(M + tw + 22, y - 14, 34, ARGO_T, 4))
+    if not tall: o.append(progress(i, n, False))
+    global H; H0 = H; H = Hh
+    p = save(f"{prefix}-{i:02d}" if not tall else prefix, "".join(o), ECUME); H = H0
+    return p
 
 files = {}
-# ---------- Carrousel 1 : teasing ----------
+# ---------- C1 teasing ----------
 n = 6; c = []
-o = [frame(1, n, True)]
-t, y = para(XB, "Servir l’État, ça s’apprend comment ?", 104, 96, 520, WHITE, 900, 1.02); o.append(t)
-o.append(T(MED, "Une question que beaucoup d’étudiants se posent.", 34, 96, y + 110, SB))
-c.append(save("c1-01", "".join(o), BLUE))
-o = [frame(2, n)]
-t, y = para(XB, "Les étudiants qui veulent s’engager ont des questions.", 76, 96, 420, BLUE, 900, 1.06); o.append(t)
-t, y = para(XB, "Celles et ceux qui ont exercé ont des réponses.", 76, 96, y + 140, SKY, 900, 1.06); o.append(t)
+c.append(save("c1-01", cover("Servir l’État, ça s’apprend comment ?", "Une question que beaucoup d’étudiants se posent."), BLUE))
+o = [f'<rect x="0" y="690" width="{W}" height="{H-690}" fill="{BLUE}"/>', frame(2, n, False, True)]
+t, y = para(XB, "Les étudiants qui veulent s’engager ont des questions.", 80, M, 330, BLUE, 900, 1.05); o.append(t)
+t, y = para(XB, "Celles et ceux qui ont exercé ont des réponses.", 80, M, 880, WHITE, 900, 1.05); o.append(t)
 c.append(save("c1-02", "".join(o)))
 o = [frame(3, n)]
-t, y = para(XB, "Mais ils se croisent rarement.", 92, 96, 470, BLUE, 900, 1.04); o.append(t)
-t, y = para(REG, "Un amphithéâtre, une conférence, une photo. Rarement le temps d’une vraie conversation.", 40, 96, y + 120, GRIS, 860, 1.35); o.append(t)
+t, y = para(XB, "Mais ils se croisent rarement.", 100, M, 330, BLUE, 900, 1.0); o.append(t)
+t, y = para(REG, "Un amphithéâtre, une conférence, une photo. Rarement le temps d’une vraie conversation.", 40, M, y + 100, INK, 880, 1.35); o.append(t)
+cx, cy, R, u = 300, 1000, 150, 5.2
+for k in range(10):
+    a = k * 36; ax = cx + R*math.sin(math.radians(a)); ay = cy - R*math.cos(math.radians(a))
+    o.append(chair(ax, ay, a, u, BLUE))
+o.append(chair(880, 1000, -90, u*1.15, RED))
+o.append(T(SEMI, "Les étudiants", 32, cx, 1222, GRIS, "middle") + T(SEMI, "Les responsables", 32, 880, 1180, GRIS, "middle") + T(SEMI, "publics", 32, 880, 1222, GRIS, "middle"))
 c.append(save("c1-03", "".join(o)))
 o = [frame(4, n)]
-t, y = para(XB, "Entre ceux qui ont servi l’État et ceux qui le serviront, il manquait une table.", 74, 96, 380, BLUE, 900, 1.08); o.append(t)
-sx = 540; o.append(f'<g transform="translate({sx-150},{y+90}) scale(0.5)">{G.table(300, 300, 540)}</g>')
+t, y = para(XB, "Entre ceux qui ont servi l’État et ceux qui le serviront, il manquait une table.", 76, M, 320, BLUE, 904, 1.06); o.append(t)
+o.append(G.table(540, 920, 640, BLUE, RED))
 c.append(save("c1-04", "".join(o)))
-o = [frame(5, n)]
-o.append(f'<g transform="translate(270,250) scale(0.9)">{G.table(300, 300, 540)}</g>')
-o.append(T(XB, "Dix étudiants.", 70, 540, 930, BLUE, "middle"))
-o.append(T(XB, "Une personnalité publique.", 70, 540, 1012, BLUE, "middle"))
-o.append(T(XB, "À huis clos.", 70, 540, 1094, RED, "middle"))
-o.append(T(SEMI, "Bientôt.", 44, 540, 1190, GRIS, "middle"))
+o = [f'<rect x="0" y="1010" width="{W}" height="{H-1010}" fill="{BLUE}"/>', frame(5, n, False, True)]
+o.append(T(XB, "10", 220, M, 470, BLUE) + T(XB, "étudiants", 64, 400, 440, BLUE))
+o.append(T(XB, "1", 220, M + 30, 730, RED) + T(XB, "personnalité", 64, 400, 650, BLUE) + T(XB, "publique", 64, 400, 720, BLUE))
+o.append(lock(M + 10, 790, 2.9, BLUE, PAPER) + T(XB, "à huis clos", 64, 400, 930, BLUE))
+o.append(T(XB, "Bientôt.", 120, M, 1210, WHITE))
 c.append(save("c1-05", "".join(o)))
-c.append(argo_slide("c1", 6, n, None))
+c.append(argo_card("c1", 6, n))
 files["c1"] = c
 
-# ---------- Carrousel 3 : concept + club ----------
+# ---------- C3 concept ----------
 n = 7; c = []
-o = [frame(1, n, True)]
-t, y = para(XB, "Premier Service, c’est quoi ?", 110, 96, 560, WHITE, 900, 1.0); o.append(t)
-o.append(T(MED, "En six images.", 36, 96, y + 110, SB))
-c.append(save("c3-01", "".join(o), BLUE))
+c.append(save("c3-01", cover("Premier Service, c’est quoi ?", "En cinq images."), BLUE))
 o = [frame(2, n)]
-o.append(f'<g transform="translate(240,210)">{G.table(300, 300, 600)}</g>')
-o.append(T(XB, "Une table.", 84, 96, 1000, BLUE))
-t, y = para(REG, "Dix étudiants et une personnalité de la vie publique. Assez peu pour que chacun parle.", 38, 96, 1075, GRIS, 880, 1.32); o.append(t)
+o.append(G.table(540, 560, 620, BLUE, RED))
+o.append(T(XB, "Une table.", 96, M, 1020, BLUE))
+t, y = para(REG, "Dix étudiants et une personnalité de la vie publique. Assez peu pour que chacun parle.", 40, M, 1100, INK, 900, 1.32); o.append(t)
 c.append(save("c3-02", "".join(o)))
 o = [frame(3, n)]
-o.append(f'<g transform="translate(96,330) scale(4)"><path d="M18 36V24a14 14 0 0 1 28 0v12" fill="none" stroke="{BLUE}" stroke-width="7" stroke-linecap="round"/><rect x="8" y="36" width="48" height="38" rx="9" fill="{BLUE}"/><circle cx="32" cy="52" r="5" fill="{PAPER}"/><rect x="29.5" y="54" width="5" height="10" rx="2.5" fill="{PAPER}"/></g>')
-o.append(T(XB, "À huis clos.", 84, 96, 790, BLUE))
-t, y = para(XB, "Ce qui se dit à table reste à table.", 56, 96, 900, RED, 880, 1.12); o.append(t)
-t, y = para(REG, "Pas de caméra pendant l’échange, pas de citation sans accord.", 36, 96, y + 90, GRIS, 880, 1.3); o.append(t)
+o.append(lock(M - 10, 250, 6.2, BLUE, PAPER))
+o.append(T(XB, "À huis clos.", 96, M, 830, BLUE))
+t, y = para(XB, "Ce qui se dit à table reste à table.", 60, M, 940, RED, 900, 1.1); o.append(t)
+t, y = para(REG, "Pas de caméra pendant l’échange, pas de citation sans accord.", 40, M, y + 96, INK, 900, 1.3); o.append(t)
 c.append(save("c3-03", "".join(o)))
 o = [frame(4, n)]
-o.append(T(XB, "Deux formats.", 84, 96, 360, BLUE))
-o.append(f'<rect x="96" y="440" width="888" height="300" rx="28" fill="{BLUE}"/>' + moon(140, 500, 110, WHITE) + T(XB, "Le dîner", 64, 300, 590, WHITE) + T(REG, "Le soir, pour prendre le temps.", 34, 300, 650, SB))
-o.append(f'<rect x="96" y="780" width="888" height="300" rx="28" fill="{WHITE}"/>' + sun(140, 840, 110, RED) + T(XB, "Le petit-déjeuner", 64, 300, 930, BLUE) + T(REG, "Le matin, quand l’agenda est serré.", 34, 300, 990, GRIS))
+o.append(T(XB, "Deux formats.", 96, M, 340, BLUE))
+o.append(f'<rect x="{M}" y="430" width="904" height="350" rx="28" fill="{BLUE}"/>' + moon(M+56, 500, 120, WHITE) + T(XB, "Le dîner", 72, M+220, 610, WHITE) + T(REG, "Le soir, pour prendre le temps.", 38, M+220, 676, SB))
+o.append(f'<rect x="{M}" y="810" width="904" height="350" rx="28" fill="{WHITE}"/>' + sun(M+56, 880, 120, RED) + T(XB, "Le petit-déjeuner", 72, M+220, 990, BLUE) + T(REG, "Le matin, quand l’agenda est serré.", 38, M+220, 1056, GRIS))
 c.append(save("c3-04", "".join(o)))
 o = [frame(5, n)]
-o.append(T(XB, "Saison 1 : douze invités.", 70, 96, 300, BLUE))
-o.append(T(MED, "Novembre – décembre 2026", 34, 96, 360, GRIS))
+o.append(T(XB, "Saison 1 : douze invités.", 76, M, 320, BLUE))
+o.append(T(MED, "Novembre et décembre 2026", 38, M, 384, INK))
 SL = ["marie-pierre-vedrenne","olivier-faure","eric-lombard","jerome-guedj","valerie-pecresse","matthieu-landon","karim-zeribi","agnes-buzyn","jacques-attali","karim-bouamrane","naima-moutchou","bernard-cazeneuve"]
 for i, s in enumerate(SL):
-    cx = 186 + (i % 4) * 236; cy = 520 + (i // 4) * 236
-    o.append(portrait(s, cx, cy, 92, WHITE, f"g{i}"))
+    cx = 190 + (i % 4) * 233; cy = 560 + (i // 4) * 240
+    o.append(portrait(s, cx, cy, 98, WHITE, f"g{i}"))
 c.append(save("c3-05", "".join(o)))
 o = [frame(6, n, True)]
-t, y = para(XB, "Après la table, le club.", 92, 96, 400, WHITE, 900, 1.04); o.append(t)
+o.append(G.table(905, 210, 760, NAVY2, RED))
+t, y = para(XB, "Après la table, le club.", 100, M, 560, WHITE, 900, 1.0); o.append(t)
 for k, s in enumerate(["L’annuaire des membres", "Les rendez-vous et les rencontres", "La lettre des prochains invités"]):
-    yy = y + 130 + k * 84
-    o.append(f'<circle cx="116" cy="{yy-14}" r="10" fill="{RED}"/>' + T(SEMI, s, 40, 150, yy, WHITE))
-o.append(f'<rect x="96" y="1010" width="888" height="110" rx="55" fill="{WHITE}"/>' + T(XB, "Rejoindre le club", 46, 540, 1082, BLUE, "middle"))
-o.append(T(MED, "alumniplatform.net/join/premierservice", 30, 540, 1180, SB, "middle"))
+    yy = y + 120 + k * 76
+    o.append(f'<circle cx="{M+12}" cy="{yy-14}" r="10" fill="{RED}"/>' + T(SEMI, s, 42, M + 46, yy, WHITE))
+o.append(f'<rect x="{M}" y="1040" width="904" height="116" rx="58" fill="{WHITE}"/>' + T(XB, "Rejoindre le club", 48, 540, 1115, BLUE, "middle"))
+o.append(T(MED, "alumniplatform.net/join/premierservice", 32, 540, 1218, SB, "middle"))
 c.append(save("c3-06", "".join(o), BLUE))
-c.append(argo_slide("c3", 7, n, None))
+c.append(argo_card("c3", 7, n))
 files["c3"] = c
 
-# ---------- Carrousel 4 : invité n°2 ----------
+# ---------- C4 invité ----------
 n = 5; c = []
 o = [frame(1, n)]
-o.append(T(SEMI, "Prochain rendez-vous", 38, 540, 230, RED, "middle"))
-o.append(at_table("olivier-faure", 540, 600, 640))
-o.append(T(XB, "Olivier Faure", 92, 540, 1080, BLUE, "middle"))
-o.append(T(REG, "Premier secrétaire du Parti socialiste", 38, 540, 1145, GRIS, "middle"))
+o.append(T(SEMI, "Prochain rendez-vous", 40, 540, 250, RED, "middle"))
+o.append(at_table("olivier-faure", 540, 620, 660))
+o.append(T(XB, "Olivier Faure", 100, 540, 1100, BLUE, "middle"))
+o.append(T(REG, "Premier secrétaire du Parti socialiste", 40, 540, 1166, INK, "middle"))
+o.append(swipe(False))
 c.append(save("c4-01", "".join(o)))
 o = [frame(2, n, True)]
-o.append(moon(96, 300, 150, WHITE))
-o.append(T(XB, "Un dîner.", 104, 96, 600, WHITE))
-o.append(T(XB, "Mardi 17 novembre", 72, 96, 710, WHITE))
-o.append(T(SEMI, "[Lieu à confirmer]", 52, 96, 800, SB))
-t, y = para(REG, "Dix étudiants autour de la table, une conversation à huis clos.", 38, 96, 930, SB, 860, 1.3); o.append(t)
+o.append(f'<rect x="{M}" y="230" width="904" height="960" rx="32" fill="{WHITE}"/>')
+o.append(f'<rect x="{M+56}" y="286" width="220" height="250" rx="24" fill="{RED}"/>')
+o.append(T(SEMI, "MAR", 34, M+166, 346, WHITE, "middle") + T(XB, "17", 130, M+166, 470, WHITE, "middle") + T(SEMI, "NOV", 34, M+166, 516, WHITE, "middle"))
+o.append(moon(M+330, 300, 64, BLUE) + T(XB, "Un dîner", 80, M+330, 450, BLUE) + T(REG, "Mardi 17 novembre 2026", 38, M+330, 512, INK))
+o.append(T(XB, "[Lieu à confirmer]", 58, M+56, 660, BLUE))
+t, y = para(REG, "Dix étudiants autour de la table, une conversation à huis clos.", 40, M+56, 740, INK, 790, 1.3); o.append(t)
+o.append(at_table("olivier-faure", 540, 1000, 300, BLUE, "t2"))
 c.append(save("c4-02", "".join(o), BLUE))
 o = [frame(3, n)]
-t, y = para(XB, "Vous avez une question à lui poser ?", 84, 96, 400, BLUE, 900, 1.06); o.append(t)
+t, y = para(XB, "Vous avez une question à lui poser ?", 88, M, 330, BLUE, 904, 1.05); o.append(t)
 for k, (a, b2) in enumerate([("Créez votre profil", "sur Alumni Platform"), ("Choisissez ce dîner", "et préparez votre question"), ("Recevez l’invitation", "dix places par table")]):
-    yy = y + 160 + k * 150
+    yy = y + 190 + k * 190
     col = RED if k == 2 else BLUE
-    o.append(f'<circle cx="130" cy="{yy-20}" r="34" fill="{col}"/>' + T(XB, str(k+1), 38, 130, yy - 6, WHITE, "middle"))
-    o.append(T(XB, a, 46, 196, yy - 20, BLUE) + T(REG, b2, 32, 196, yy + 24, GRIS))
+    o.append(f'<circle cx="{M+40}" cy="{yy-22}" r="40" fill="{col}"/>' + T(XB, str(k+1), 44, M+40, yy - 6, WHITE, "middle"))
+    o.append(T(XB, a, 52, M+120, yy - 22, BLUE) + T(REG, b2, 38, M+120, yy + 30, INK))
 c.append(save("c4-03", "".join(o)))
 o = [frame(4, n, True)]
-t, y = para(XB, "Inscrivez-vous pour participer.", 96, 96, 470, WHITE, 900, 1.04); o.append(t)
-o.append(f'<rect x="96" y="{y+110:.0f}" width="888" height="110" rx="55" fill="{WHITE}"/>' + T(XB, "S’inscrire sur Alumni Platform", 42, 540, y + 182, BLUE, "middle"))
-o.append(T(MED, "alumniplatform.net/join/premierservice", 30, 540, y + 290, SB, "middle"))
+o.append(at_table("olivier-faure", M + 150, 380, 300, "#3B4DA8", "t3"))
+t, y = para(XB, "Inscrivez-vous pour participer.", 100, M, 680, WHITE, 904, 1.02); o.append(t)
+o.append(f'<rect x="{M}" y="{y+100:.0f}" width="904" height="116" rx="58" fill="{WHITE}"/>' + T(XB, "S’inscrire sur Alumni Platform", 44, 540, y + 175, BLUE, "middle"))
+o.append(T(MED, "alumniplatform.net/join/premierservice", 32, 540, y + 282, SB, "middle"))
 c.append(save("c4-04", "".join(o), BLUE))
-c.append(argo_slide("c4", 5, n, None))
+c.append(argo_card("c4", 5, n))
 files["c4"] = c
 
-# ---------- Post 2 : couverture vidéo (9:16 + 4:5) ----------
+# ---------- vidéo ----------
 W, H = 1080, 1920
 o = [logo(290, 180, 500)]
-o.append(f'<g transform="translate(240,620)">{G.table(300, 300, 600)}</g>')
-o.append(T(XB, "Le film", 110, 540, 1420, BLUE, "middle"))
-o.append(T(MED, "Premier Service en 1 min 30", 44, 540, 1500, GRIS, "middle"))
+o.append(G.table(540, 920, 640, BLUE, RED))
+o.append(T(XB, "Le film", 120, 540, 1440, BLUE, "middle"))
+o.append(T(MED, "Premier Service en 1 min 30", 46, 540, 1520, INK, "middle"))
 files["v"] = [save("v-couverture-9x16", "".join(o))]
-print({k: len(v) for k, v in files.items()})
-
-# carton de fin vidéo (3 s) : soutien Argonautes
-o = [logo(96, 140, 360, True)]
-t, y = para(XB, "Ce projet est soutenu par Les Argonautes.", 76, 96, 760, WHITE, 900, 1.08); o.append(t)
-t, y = para(REG, "Cabinet de conseil et d’exécution dédié au secteur public.", 42, 96, y + 100, SB, 860, 1.3); o.append(t)
-o.append(f'<rect x="96" y="{y+80:.0f}" width="640" height="{640*AR+64:.0f}" rx="28" fill="{PAPER}"/>')
-o.append(f'<image href="{ARGO_C}" x="128" y="{y+112:.0f}" width="576" height="{576*AR:.0f}"/>')
-o.append(T(SEMI, "lesargos.fr", 48, 96, y + 80 + 640*AR + 64 + 110, WHITE))
-files["v"].append(save("v-fin-argonautes-9x16", "".join(o), BLUE))
+files["v"].append(argo_card("v-fin-argonautes-9x16", 0, 0, True))
 print({k: len(v) for k, v in files.items()})

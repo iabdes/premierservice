@@ -89,7 +89,7 @@ Titre du document LinkedIn : Premier Service, c’est quoi ?
 
 ### LinkedIn
 
-Premier Service, c’est quoi ? En six images.
+Premier Service, c’est quoi ? En cinq images.
 
 1. Une table : dix étudiants et une personnalité de la vie publique, assez peu pour que chacun parle.
 2. À huis clos : pas de caméra pendant l’échange, pas de citation sans accord.
