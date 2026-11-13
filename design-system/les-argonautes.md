@@ -1,6 +1,6 @@
 # Les Argonautes
 
-Les Argonautes, un cabinet de conseil et d’exécution dédié au secteur public, soutiennent Premier Service. Leur présence est une signature de partenaire, jamais une co-marque, et jamais présentée comme un accès privilégié aux invités ou aux institutions.
+Les Argonautes, cabinet de conseil et d’exécution dédié au secteur public, soutiennent Premier Service. Leur présence est une signature de partenaire, jamais une co-marque, et jamais présentée comme un accès privilégié aux invités ou aux institutions.
 
 ## Le cartouche de fin (obligatoire)
 
@@ -21,7 +21,7 @@ Composition, dans la charte des Argonautes posée dans le cadre Premier Service 
 - Restent du cadre Premier Service : le logo en haut à gauche et la barre de progression d’un carrousel.
 - Rien d’autre : ni gravure, ni encadré, ni autre texte.
 
-Texte de légende : « Ce projet est soutenu par Les Argonautes, un cabinet de conseil et d’exécution dédié au secteur public. » LinkedIn : identifier la page et ajouter lesargos.fr. Instagram : identifier le compte et écrire « lien en bio ».
+Texte de légende : « Ce projet est soutenu par Les Argonautes, cabinet de conseil et d’exécution dédié au secteur public. » LinkedIn : identifier la page et ajouter lesargos.fr. Instagram : identifier le compte et écrire « lien en bio ».
 
 ## Les fichiers
 

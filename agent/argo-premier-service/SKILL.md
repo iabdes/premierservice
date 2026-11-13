@@ -31,9 +31,9 @@ Si une source est inaccessible, le dire, travailler avec ce qui est disponible, 
 
 **Wording exact**, à reprendre mot pour mot :
 
-> Ce projet est soutenu par Les Argonautes, un cabinet de conseil et d’exécution dédié au secteur public.
+> Ce projet est soutenu par Les Argonautes, cabinet de conseil et d’exécution dédié au secteur public.
 
-- **Visuel** (dernière slide, dernière diapositive, dernier écran, carton de fin) : fond écume `#F5F1E8`, tout centré ; « Ce projet est soutenu par » (Outfit SemiBold, noir `#010101`) → logo Les Argonautes (fichier `les-argonautes_logo_fond-clair`, ~60 % de la largeur, jamais retapé) → « un cabinet de conseil et d’exécution dédié au secteur public. » (gris `#5C5A56`) → étiquette **lesargos.fr** blanche sur pilule noire, flèche rouge `#F10F23`. Logo Premier Service en haut à gauche ; barre de progression pour un carrousel. Rien d’autre.
+- **Visuel** (dernière slide, dernière diapositive, dernier écran, carton de fin) : fond écume `#F5F1E8`, tout centré ; « Ce projet est soutenu par » (Outfit SemiBold, noir `#010101`) → logo Les Argonautes (fichier `les-argonautes_logo_fond-clair`, ~60 % de la largeur, jamais retapé) → « Cabinet de conseil et d’exécution dédié au secteur public. » (gris `#5C5A56`) → étiquette **lesargos.fr** blanche sur pilule noire, flèche rouge `#F10F23`. Logo Premier Service en haut à gauche ; barre de progression pour un carrousel. Rien d’autre.
 - **Texte** (légende, message, note, e-mail, document) : la phrase exacte en dernière ligne, suivie de lesargos.fr (LinkedIn, WhatsApp, document) ou « lien en bio » et le compte identifié (Instagram).
 - **Vidéo** : carton Premier Service puis cartouche 3 s.
 - Un support sans cartouche n’est pas livrable.

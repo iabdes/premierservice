@@ -17,7 +17,7 @@ Deux formats de film, tous deux verticaux 9:16, autour d’une minute trente. Fi
 - Sous-titres incrustés, en Outfit, blanc sur bande bleu-marine à 90 %, deux lignes au plus.
 - Textes à l’écran (noms des scrutins, « Cohorte d’automne », « Dix places ») en Outfit, sans effet.
 - Le chevalet Premier Service (badge ou logo) est le seul objet de marque à l’image.
-- Carton final, deux temps : d’abord Premier Service (logo, « 10 étudiants par session », l’adresse du site ou d’Alumni Platform, lisible au moins 4 s) ; puis le cartouche Les Argonautes, 3 s (composant CartoucheArgonautes, format 9:16). La voix off peut dire « Ce projet est soutenu et valorisé par Les Argonautes, un cabinet de conseil et d’exécution dédié au secteur public ».
+- Carton final, deux temps : d’abord Premier Service (logo, « 10 étudiants par session », l’adresse du site ou d’Alumni Platform, lisible au moins 4 s) ; puis le cartouche Les Argonautes, 3 s (composant CartoucheArgonautes, format 9:16). La voix off peut dire « Ce projet est soutenu et valorisé par Les Argonautes, cabinet de conseil et d’exécution dédié au secteur public ».
 - Musique qui s’efface sur les moments de silence ; son de la porte qui se ferme.
 
 ## Les documents de production

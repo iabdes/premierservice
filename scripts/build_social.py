@@ -100,7 +100,7 @@ def argo_card(prefix, i, n, tall=False):
     lw = 640
     o.append(f'<image href="{ARGO_C}" x="{W/2 - lw/2:.0f}" y="{cy - 105:.0f}" width="{lw}" height="{lw*AR:.0f}"/>')
     yy = cy - 105 + lw*AR + 96
-    for k, l in enumerate(["un cabinet de conseil et d’exécution", "dédié au secteur public."]):
+    for k, l in enumerate(["Cabinet de conseil et d’exécution", "dédié au secteur public."]):
         o.append(T(REG, l, 38, W/2, yy + k*52, GALET, "middle"))
     yy += 52 + 70
     lab = "lesargos.fr"; tw = wid(SEMI, lab, 36); pw = tw + 64 + 46

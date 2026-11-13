@@ -39,7 +39,7 @@ Police : Outfit (Google Fonts). Le mot « Premier » du logo n’existe qu’en 
 
 - Dernière slide de chaque carrousel, 3 s à la fin de chaque vidéo, dernière diapositive d’une présentation publique.
 - Fond écume `#F5F1E8`, tout centré : « Ce projet est soutenu par » (Outfit SemiBold, `#010101`) → logo Les Argonautes (fichier) → « Cabinet de conseil et d’exécution dédié au secteur public. » (`#5C5A56`) → étiquette **lesargos.fr** blanche sur pilule noire, flèche rouge `#F10F23`. Logo Premier Service en haut à gauche, barre de progression en bas.
-- Dernière ligne de chaque légende : « Ce projet est soutenu par Les Argonautes, un cabinet de conseil et d’exécution dédié au secteur public. » + lesargos.fr et page identifiée (LinkedIn) ou compte identifié et « lien en bio » (Instagram).
+- Dernière ligne de chaque légende : « Ce projet est soutenu par Les Argonautes, cabinet de conseil et d’exécution dédié au secteur public. » + lesargos.fr et page identifiée (LinkedIn) ou compte identifié et « lien en bio » (Instagram).
 
 ## 4. Contrôle avant livraison
 
