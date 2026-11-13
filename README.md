@@ -20,6 +20,8 @@ Ce dépôt rassemble tous les éléments de l’identité, version du 13 novembr
 | `publications/projections/` | Maquettes de mise en situation. |
 | `charte-graphique/` | Sources de la présentation de la charte (27 diapositives, format Slides : `deck.json`, `deck.css`, `slides/`). Les images y sont référencées par l’artefact en ligne. |
 | `design-system/` | Système de marque : `README.md` (guide), `tokens.json` (couleurs, typographie, espacements), `saison-1.md`, `les-argonautes.md`, composants avec aperçus. |
+| `site/` | Maquette du site (`maquette/Main.dc.html`, Claude Design) et brief de réalisation (`BRIEF-LOVABLE.md`). |
+| `portraits/web/` | Portraits en 900 px, JPG, pour le web. |
 | `scripts/` | Scripts Python qui génèrent logos, sigle, publications et portraits (fontTools, uharfbuzz, rsvg-convert). Chemins à adapter. |
 
 ## L’essentiel
