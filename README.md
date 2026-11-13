@@ -21,6 +21,7 @@ Ce dépôt rassemble tous les éléments de l’identité, version du 13 novembr
 | `charte-graphique/` | Sources de la présentation de la charte (27 diapositives, format Slides : `deck.json`, `deck.css`, `slides/`). Les images y sont référencées par l’artefact en ligne. |
 | `design-system/` | Système de marque : `README.md` (guide), `tokens.json` (couleurs, typographie, espacements), `saison-1.md`, `les-argonautes.md`, composants avec aperçus. |
 | `site/` | Maquette du site (`maquette/Main.dc.html`, Claude Design) et brief de réalisation (`BRIEF-LOVABLE.md`). |
+| `fondateurs/` | Vidéo des trois fondateurs (10 s, 1176 × 784, sans son) et son image d’attente. |
 | `portraits/animes/` | Les douze portraits animés (boucle de 3 s, 960 px, MP4) ; versions web 480 px sans son et images d’attente dans `portraits/animes/web/`. |
 | `portraits/web/` | Portraits en 900 px, JPG, pour le web. |
 | `scripts/` | Scripts Python qui génèrent logos, sigle, publications et portraits (fontTools, uharfbuzz, rsvg-convert). Chemins à adapter. |
