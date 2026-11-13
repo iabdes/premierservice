@@ -1,0 +1,1 @@
+Sigle (la table et ses onze chaises), badge rond PREMIER / SERVICE, icône d’application. Couleur : table `bleu-marine`, chaise de l’invité `rouge`. Blanc : table blanche, chaise rouge, pour les fonds bleus.

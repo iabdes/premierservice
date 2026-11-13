@@ -1,0 +1,37 @@
+PREMIER SERVICE — ASSETS POUR LA VIDÉO ET LE MOTION DESIGN
+Version 2, 13 novembre 2026
+
+01_logos
+  Logo seul, logo horizontal (sigle à gauche), logo vertical (sigle au-dessus).
+  Chaque version en couleur et en blanc. SVG vectoriel + PNG transparent 3840 px de large.
+
+02_sigle-badge
+  Sigle (la table et ses onze chaises), badge rond « PREMIER / SERVICE », icône.
+  PNG transparent 2160 px.
+
+03_calques-animation
+  logo/   « Premier » et « SERVICE » séparés, chacun sur le même canevas que le logo complet :
+          les empiler à la même position reconstitue le logo exact.
+          logo_calques-nommes.svg : un seul fichier, groupes « premier » et « service ».
+  sigle/  la table, les dix chaises des étudiants (01 à 10) et la chaise de l'invité, chacune
+          sur le même canevas de 600 × 600 (PNG 2160 px). sigle_calques-nommes.svg : un seul
+          fichier, groupes « table », « chaise-01 » à « chaise-10 », « chaise-invite ».
+
+04_couleurs
+  Bleu marine #1E2F86 · Ciel profond #2C86D1 · Rouge #E0313B · Blanc cassé #FAF7F0 · Blanc #FFFFFF
+
+RÈGLES
+  - Ne jamais déformer, pivoter, recolorer ni ajouter d'ombre ou de contour.
+  - Zone de protection autour du logo : la hauteur des capitales de SERVICE.
+  - Fond clair : version couleur. Fond bleu, sombre ou image : version blanche.
+  - Le ciel profond est réservé à « Premier » ; le rouge à la chaise de l'invité (et à SERVICE dans le badge).
+  - Jamais le logo et le badge dans le même plan.
+  - Le texte du logo est vectorisé : aucune police à installer pour l'utiliser.
+  - Pour les textes à l'écran : police Outfit (gratuite, Google Fonts), ExtraBold pour les titres.
+    La police de « Premier » (Breathing) ne sert jamais à composer d'autre texte.
+
+PISTES D'ANIMATION (suggestions)
+  - Sigle : la table apparaît, puis les dix chaises une à une autour, la chaise rouge de
+    l'invité en dernier, en haut.
+  - Logo : « Premier » se trace comme une écriture à la main, puis « SERVICE » se pose dessous.
+  - Mouvements doux, sans rebond ; durée totale d'une signature : 1,5 à 2,5 s.

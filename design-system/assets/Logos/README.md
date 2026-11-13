@@ -1,0 +1,1 @@
+Le logo Premier Service en SVG : seul, horizontal (sigle à gauche), vertical (sigle au-dessus), en couleur (fond clair) et en blanc (fond bleu ou photo). Couleur : « Premier » `ciel`, SERVICE `bleu-marine`, chaise de l’invité `rouge`. Blanc : tout en blanc sauf la chaise de l’invité, rouge.

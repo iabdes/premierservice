@@ -1,0 +1,23 @@
+<!-- @dsCard height=300 -->
+<style>
+html,body{margin:0;height:100%;background:var(--surface)}
+.cv{position:relative;width:960px;height:300px;overflow:hidden;background:var(--surface);font-family:var(--font-outfit)}
+.cv svg{position:absolute;left:0;top:0}
+.tab{fill:var(--sigle-table)} .ch{fill:var(--sigle-table)} .inv{fill:var(--sigle-invite)} .sky{fill:var(--ciel)} .voile{fill:var(--surface-carte)}
+.nm{position:absolute;left:48px;bottom:64px;width:420px;font-weight:800;font-size:96px;line-height:.95;letter-spacing:-2px;color:var(--titre);margin:0}
+.tg{position:absolute;left:48px;bottom:32px;width:420px;font-size:14px;color:var(--texte-second);margin:0}
+</style>
+<div class="cv">
+<svg width="960" height="300" viewBox="0 0 960 300" aria-hidden="true">
+<!-- blocks: sigle-table disc r=120 (the table) + surface-carte slab 400x300 + ciel band 160x56 rx 24 (radius-carte) + sigle-invite chair
+     arrangement: one slab bleeding off the right edge, the table centred on it, ciel band low left of the slab
+     pattern: literal motif, the table's eleven chairs on one ring (radius-chaise ≈ 8/42); the brand IS a table seen from above
+     scales: ring 168 = table r 120 x 1.4 (R_RING/R_TABLE), chair 42x26, gap space-4 32, radius-carte 24 -->
+<rect class="voile" x="560" y="0" width="400" height="300"/>
+<rect class="sky" x="496" y="212" width="160" height="56" rx="24"/>
+<circle class="tab" cx="700" cy="150" r="120"/>
+<rect class="inv" x="679" y="-31" width="42" height="26" rx="8" transform="rotate(0.00 700 150)"/><rect class="ch" x="679" y="-31" width="42" height="26" rx="8" transform="rotate(32.73 700 150)"/><rect class="ch" x="679" y="-31" width="42" height="26" rx="8" transform="rotate(65.45 700 150)"/><rect class="ch" x="679" y="-31" width="42" height="26" rx="8" transform="rotate(98.18 700 150)"/><rect class="ch" x="679" y="-31" width="42" height="26" rx="8" transform="rotate(130.91 700 150)"/><rect class="ch" x="679" y="-31" width="42" height="26" rx="8" transform="rotate(163.64 700 150)"/><rect class="ch" x="679" y="-31" width="42" height="26" rx="8" transform="rotate(196.36 700 150)"/><rect class="ch" x="679" y="-31" width="42" height="26" rx="8" transform="rotate(229.09 700 150)"/><rect class="ch" x="679" y="-31" width="42" height="26" rx="8" transform="rotate(261.82 700 150)"/><rect class="ch" x="679" y="-31" width="42" height="26" rx="8" transform="rotate(294.55 700 150)"/><rect class="ch" x="679" y="-31" width="42" height="26" rx="8" transform="rotate(327.27 700 150)"/>
+</svg>
+<p class="nm">Premier<br>Service</p>
+<p class="tg">Dix étudiants, un invité, une table.</p>
+</div>

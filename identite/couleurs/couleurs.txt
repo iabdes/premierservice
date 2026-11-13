@@ -1,0 +1,9 @@
+Premier Service — couleurs
+
+Bleu marine  #1E2F86   RVB 30 47 134    SERVICE, table du sigle, titres
+Ciel profond #2C86D1   RVB 44 134 209   « Premier » uniquement
+Rouge        #E0313B   RVB 224 49 59    chaise de l'invité, SERVICE du badge
+Blanc cassé  #FAF7F0   RVB 250 247 240  fonds
+Blanc        #FFFFFF                    fond du logo, logo blanc sur bleu
+
+Valeurs CMJN / Pantone : à établir avec l'imprimeur.
