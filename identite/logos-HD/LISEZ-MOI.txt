@@ -1,0 +1,16 @@
+PREMIER SERVICE — LOGOS HAUTE DÉFINITION (13 novembre 2026)
+
+1_logo-et-sigle   Logo avec la table : horizontal (sigle à gauche) et vertical (sigle au-dessus)
+2_sigle-seul      La table et ses onze chaises
+3_logo-seul       « Premier » + « SERVICE », sans le sigle
+
+Chaque version en « couleur » (fonds clairs) et en « blanc » (fonds bleus, sombres ou photo),
+et dans quatre formats :
+  .svg            vectoriel, pour l'impression, le web et la vidéo (taille illimitée)
+  .pdf            vectoriel, pour l'imprimeur et les logiciels de mise en page
+  _4000px.png     fond transparent, haute définition
+  _1000px.png     fond transparent, usage courant (documents, réseaux)
+
+Couleurs : « Premier » ciel profond #2C86D1 · SERVICE et table bleu marine #1E2F86 · chaise de l'invité rouge #E0313B.
+Règles : ne pas déformer, pivoter, recolorer, ni ajouter d'ombre ou de contour. Zone de protection = hauteur des capitales de SERVICE.
+Le mot « Premier » est vectorisé : aucune police à installer. Licence commerciale de la police Breathing à acquérir avant diffusion publique.

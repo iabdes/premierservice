@@ -200,11 +200,11 @@ a:focus-visible,button:focus-visible{outline:3px solid #2C86D1;outline-offset:3p
 <article class="carte-inv" style="background: #FFFFFF; border-radius: 24px; overflow: hidden; display: flex; flex-direction: column;">
 <div style="position: relative; overflow: hidden; aspect-ratio: 1; background: #F3EEE3;">
 <img src="{{g.photo}}" alt="Portrait de {{g.name}}" style="{{g.imgStyle}}">
-<span style="position: absolute; left: 14px; top: 14px; background: #FFFFFF; color: #1E2F86; font-weight: 700; font-size: 14px; padding: 7px 12px; border-radius: 999px;">{{g.date}} · {{g.format}}</span>
+<span style="position: absolute; left: 14px; top: 14px; background: #FFFFFF; color: #1E2F86; font-weight: 700; font-size: 14px; padding: 7px 12px; border-radius: 999px;">{{g.format}}</span>
 <sc-if value="{{g.past}}" hint-placeholder-val="{{ false }}"><span style="position: absolute; right: 14px; top: 14px; background: #1A1D33; color: #FFFFFF; font-weight: 600; font-size: 13px; padding: 7px 12px; border-radius: 999px;">Passé</span></sc-if>
 </div>
 <div style="padding: 18px 20px 22px; display: flex; flex-direction: column; gap: 6px;">
-<p style="margin: 0; font-size: 13px; font-weight: 600; color: #E0313B;">Rendez-vous n°{{g.n}}</p>
+<p style="margin: 0; font-size: 14px; font-weight: 600; color: #E0313B;">{{g.jourCap}}</p>
 <h3 style="margin: 0; font-size: 21px; line-height: 1.15; font-weight: 800; color: #1E2F86;">{{g.name}}</h3>
 <p style="margin: 0; font-size: 15px; line-height: 1.4; color: #4F546E;">{{g.role}}</p>
 </div>
@@ -376,7 +376,7 @@ class Component extends DCLogic {
     var all = G.map(function (r, i) {
       var p = r[0].split('-'); var d = new Date(+p[0], +p[1] - 1, +p[2]);
       var past = d.getTime() < t0;
-      return { n: i + 1, date: p[2] + '.' + p[1], dateLong: (+p[2]) + ' ' + M[+p[1] - 1], jour: J[d.getDay()] + ' ' + (+p[2]) + ' ' + M[+p[1] - 1], days: Math.round((d.getTime() - t0) / 864e5),
+      return { n: i + 1, date: p[2] + '.' + p[1], dateLong: (+p[2]) + ' ' + M[+p[1] - 1], jour: J[d.getDay()] + ' ' + (+p[2]) + ' ' + M[+p[1] - 1], jourCap: J[d.getDay()].charAt(0).toUpperCase() + J[d.getDay()].slice(1) + ' ' + (+p[2]) + ' ' + M[+p[1] - 1], days: Math.round((d.getTime() - t0) / 864e5),
         format: r[1], diner: r[1] === 'Dîner', matin: r[1] !== 'Dîner', name: r[2], role: r[3], img: r[4], photo: '/_blob/' + P[i], past: past,
         imgStyle: 'display: block; width: 100%; height: 100%; object-fit: cover;' + (past ? ' filter: grayscale(1); opacity: .7;' : '') };
     });
