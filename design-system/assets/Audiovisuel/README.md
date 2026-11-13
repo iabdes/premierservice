@@ -1,0 +1,1 @@
+Fiches de production vidéo (documents de travail des Argonautes, A4) : le film de lancement (script et storyboard en sept plans, 1 min 34, trois voix) et la capsule terrain « Un dîner place Beauvau » (1 min 30, moitié écrit, moitié capté). Aperçus PNG et PDF d’origine. Règles : section Audiovisuel.

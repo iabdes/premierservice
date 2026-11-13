@@ -9,3 +9,70 @@
 .ps-carte .fonction { color: var(--texte-second); line-height: 1.3; }
 .ps-partenaire { display: inline-flex; align-items: center; gap: 10px; color: var(--mention); }
 .ps-partenaire img { height: 26px; width: auto; }
+
+/* ---- v2 : site, réseaux, cartouche ---- */
+.ps-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 26px; border-radius: 999px; font: 600 18px/1.2 var(--font-outfit); text-decoration: none; border: 2px solid transparent; cursor: pointer; transition: background-color .2s, color .2s, transform .2s; }
+.ps-btn--plein { background: var(--bleu-marine); color: var(--blanc); }
+.ps-btn--plein:hover { background: var(--marine-survol); }
+.ps-btn--contour { border-color: var(--bleu-marine); color: var(--bleu-marine); background: transparent; }
+.ps-btn--contour:hover { background: var(--bleu-marine); color: var(--blanc); }
+.ps-btn--blanc { background: var(--blanc); color: var(--bleu-marine); }
+.ps-btn--argo { background: var(--bleu-marine); color: var(--blanc); font-size: 16px; }
+.ps-btn--argo:hover { background: var(--argo-rouge); transform: translateY(-2px); }
+.ps-btn:focus-visible { outline: 3px solid var(--ciel); outline-offset: 3px; }
+
+.ps-carton { position: relative; display: flex; flex-direction: column; width: 100%; background: var(--blanc); border-radius: 24px; box-shadow: var(--ombre-carton); font-family: var(--font-outfit); }
+.ps-carton--prochain { box-shadow: 0 0 0 2px var(--rouge), var(--ombre-carton); }
+.ps-carton__media { position: relative; }
+.ps-carton__img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 24px 24px 0 0; }
+.ps-carton--passe .ps-carton__img { filter: grayscale(1); }
+.ps-carton--passe { opacity: .7; }
+.ps-pastille { position: absolute; right: 10px; top: 10px; display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 999px; font-size: 13px; font-weight: 600; box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+.ps-pastille--diner { background: var(--bleu-marine); color: var(--blanc); }
+.ps-pastille--petitdej { background: var(--blanc); color: var(--bleu-marine); }
+.ps-pastille svg { width: 16px; height: 16px; }
+.ps-etiquette { position: absolute; left: 14px; bottom: -24px; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.ps-etiquette__prochain { background: var(--rouge); color: var(--blanc); font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; }
+.ps-etiquette__date { width: 72px; height: 80px; border-radius: 16px; background: var(--blanc); box-shadow: var(--ombre-etiquette); display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.ps-carton--passe .ps-etiquette__date { background: var(--papier); }
+.ps-etiquette__jour { font-size: 12px; font-weight: 600; color: var(--rouge-texte); letter-spacing: .02em; }
+.ps-etiquette__num { font-size: 34px; font-weight: 800; line-height: 1; color: var(--bleu-marine); }
+.ps-etiquette__mois { font-size: 13px; color: var(--gris); }
+.ps-carton--passe .ps-etiquette__jour, .ps-carton--passe .ps-etiquette__num { color: var(--doux); }
+.ps-ticket { position: relative; height: 0; border-top: 2px dashed var(--filet); margin: 40px 14px 0; }
+.ps-ticket::before, .ps-ticket::after { content: ""; position: absolute; top: -10px; width: 18px; height: 18px; border-radius: 50%; background: var(--papier); }
+.ps-ticket::before { left: -23px; } .ps-ticket::after { right: -23px; }
+.ps-carton__corps { display: flex; flex-direction: column; gap: 6px; padding: 16px 18px 16px; }
+.ps-carton__nom { font-size: 21px; font-weight: 800; line-height: 1.15; color: var(--bleu-marine); margin: 0; }
+.ps-carton__fonction { font-size: 15px; line-height: 1.35; color: var(--gris); margin: 0; }
+.ps-carton__pied { display: flex; justify-content: space-between; align-items: center; padding-top: 10px; font-size: 13px; font-weight: 700; }
+.ps-carton__statut { color: var(--rouge-texte); }
+.ps-carton--passe .ps-carton__statut { color: var(--doux); }
+.ps-carton__action { color: var(--bleu-marine); font-weight: 600; font-size: 14px; }
+
+.ps-cartouche { position: relative; overflow: hidden; background: var(--argo-creme); font-family: var(--font-outfit); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.ps-cartouche__logo-ps { position: absolute; left: 6.7%; top: 4.4%; width: 18.5%; }
+.ps-cartouche__soutien { color: var(--argo-noir); font-weight: 600; margin: 0; }
+.ps-cartouche__argo { width: 59%; margin: 3% 0 6%; }
+.ps-cartouche__metier { color: var(--argo-galet); margin: 0 0 6%; line-height: 1.37; }
+.ps-cartouche__site { display: inline-flex; align-items: center; gap: .5em; background: var(--argo-noir); color: var(--blanc); font-weight: 600; border-radius: 999px; padding: .5em .9em; }
+.ps-cartouche__site svg { width: .8em; height: .8em; stroke: var(--argo-rouge); }
+.ps-progression { position: absolute; left: 8.1%; right: 8.1%; bottom: 4.7%; display: flex; gap: .9%; }
+.ps-progression i { flex: 1; height: 2px; border-radius: 1px; background: var(--progression-off-clair); }
+.ps-progression i.on { background: var(--progression-active-clair); }
+.ps-progression--bleu i { background: var(--progression-off-bleu); }
+.ps-progression--bleu i.on { background: var(--blanc); }
+
+.ps-slide { position: relative; overflow: hidden; width: 270px; height: 337px; font-family: var(--font-outfit); }
+.ps-slide--bleu { background: var(--bleu-marine); color: var(--blanc); }
+.ps-slide--papier { background: var(--papier); color: var(--bleu-marine); }
+
+.ps-medaillon { position: relative; border-radius: 50%; overflow: hidden; background: var(--bleu-marine); }
+.ps-medaillon img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.ps-bulle { position: relative; display: inline-block; border-radius: 50%; }
+.ps-bulle img { display: block; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; border: 5px solid var(--blanc); box-shadow: var(--ombre-bulle); box-sizing: border-box; }
+.ps-bulle__nom { position: absolute; left: 50%; top: 100%; transform: translate(-50%, 10px); white-space: nowrap; background: var(--bleu-marine); color: var(--blanc); font: 700 15px var(--font-outfit); padding: 7px 14px; border-radius: 999px; }
+.ps-bulle--active img { border-color: var(--rouge); }
+.ps-rond-film { border-radius: 50%; background: radial-gradient(circle at 35% 30%, #2a3ea0 0%, var(--bleu-marine) 62%); box-shadow: 0 0 0 10px rgba(30,47,134,.1), 0 30px 70px rgba(26,29,51,.3); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; color: var(--blanc); font: 600 15px var(--font-outfit); }
+.ps-rond-film__play { width: 56px; height: 56px; border-radius: 50%; background: var(--blanc); display: flex; align-items: center; justify-content: center; }

@@ -23,7 +23,8 @@ Ce dépôt rassemble tous les éléments de l’identité, version du 13 novembr
 | `charte-graphique/` | Sources de la présentation de la charte (35 diapositives, format Slides : `deck.json`, `deck.css`, `slides/`). Les images y sont référencées par l’artefact en ligne. |
 | `design-system/` | Système de marque : `README.md` (guide), `tokens.json` (couleurs, typographie, espacements), `saison-1.md`, `les-argonautes.md`, composants avec aperçus. |
 | `site/` | Maquette du site (`maquette/Main.dc.html`, Claude Design) et brief de réalisation (`BRIEF-LOVABLE.md`). |
-| `fondateurs/` | Photo d’équipe (Thawben, Lara, Louis), vidéo des trois fondateurs (10 s, sans son) et son image d’attente ; `portraits/` (médaillons, 1254 px et 600 px) ; `fiches/` (fiches personnage, références de ressemblance). |
+| `audiovisuel/` | Fiches de script et storyboard : film de lancement, capsule terrain place Beauvau. |
+| `fondateurs/` | Visuel principal (photo d’équipe) (Thawben, Lara, Louis), vidéo des trois fondateurs (10 s, sans son) et son image d’attente ; `portraits/` (médaillons, 1254 px et 600 px) ; `fiches/` (fiches personnage, références de ressemblance). |
 | `charte-graphique/CHARTE.md` | **La charte complète en texte** : esprit, logo, couleurs, typo, portraits, carte de rendez-vous, gabarits, cartouche Les Argonautes, contrôle. |
 | `agent/premier-service-studio/` | Compétence d’agent graphique et community manager (SKILL.md). |
 | `publications/reseaux/` | Ligne éditoriale : 4 premiers posts (carrousels PNG, PDF LinkedIn, couverture et carton vidéo, `LEGENDES.md`). |

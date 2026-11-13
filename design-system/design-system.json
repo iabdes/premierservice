@@ -1,563 +1,849 @@
 {
-  "v": 3,
-  "assetGroups": {
-    "Construction": {
-      "files": {
-        "logo-construction.png": {
-          "blob": "f30138187d136fdcbbe5e2c2bf045598",
-          "name": "logo-construction.png",
-          "size": 220278,
-          "type": "image/png"
-        },
-        "sigle-construction.png": {
-          "blob": "8a8d75b2ff10ada7cad174afbc0622da",
-          "name": "sigle-construction.png",
-          "size": 117680,
-          "type": "image/png"
-        }
-      },
-      "name": "Construction",
-      "order": [
-        "logo-construction.png",
-        "sigle-construction.png"
-      ],
-      "tile": "l"
+ "v": 3,
+ "assetGroups": {
+  "Construction": {
+   "files": {
+    "logo-construction.png": {
+     "blob": "f30138187d136fdcbbe5e2c2bf045598",
+     "name": "logo-construction.png",
+     "size": 220278,
+     "type": "image/png"
     },
-    "Les-Argonautes": {
-      "files": {
-        "les-argonautes_logo_fond-clair.svg": {
-          "blob": "3806dc330996f361dbbcbdfbc1038150",
-          "name": "les-argonautes_logo_fond-clair.svg",
-          "size": 4841,
-          "type": "image/svg+xml"
-        },
-        "les-argonautes_logo_fond-sombre.svg": {
-          "blob": "0cf28a7c7e414e4d914fb564848d05af",
-          "name": "les-argonautes_logo_fond-sombre.svg",
-          "size": 4841,
-          "type": "image/svg+xml"
-        },
-        "les-argonautes_monogramme_fond-clair.svg": {
-          "blob": "e71ccb093f07c817674bec140f6988ce",
-          "name": "les-argonautes_monogramme_fond-clair.svg",
-          "size": 691,
-          "type": "image/svg+xml"
-        },
-        "les-argonautes_monogramme_fond-sombre.svg": {
-          "blob": "985d0f48cf8e0d39949c7faa21b059fc",
-          "name": "les-argonautes_monogramme_fond-sombre.svg",
-          "size": 691,
-          "type": "image/svg+xml"
-        }
-      },
-      "name": "Les-Argonautes",
-      "order": [
-        "les-argonautes_logo_fond-clair.svg",
-        "les-argonautes_logo_fond-sombre.svg",
-        "les-argonautes_monogramme_fond-clair.svg",
-        "les-argonautes_monogramme_fond-sombre.svg"
-      ],
-      "tile": "m"
-    },
-    "Logos": {
-      "files": {
-        "premier-service_logo-horizontal_blanc.svg": {
-          "blob": "ff9f9f65042a4598b177eb74651c8788",
-          "name": "premier-service_logo-horizontal_blanc.svg",
-          "size": 135878,
-          "type": "image/svg+xml"
-        },
-        "premier-service_logo-horizontal_couleur.svg": {
-          "blob": "00fb24f9f49e983f65ce7eaec00b227a",
-          "name": "premier-service_logo-horizontal_couleur.svg",
-          "size": 135878,
-          "type": "image/svg+xml"
-        },
-        "premier-service_logo-vertical_blanc.svg": {
-          "blob": "de5dda4ee6ff54763bfe39ab8c678f7c",
-          "name": "premier-service_logo-vertical_blanc.svg",
-          "size": 135878,
-          "type": "image/svg+xml"
-        },
-        "premier-service_logo-vertical_couleur.svg": {
-          "blob": "a2be26f89df5b48a742dfc8cf6d1181a",
-          "name": "premier-service_logo-vertical_couleur.svg",
-          "size": 135878,
-          "type": "image/svg+xml"
-        },
-        "premier-service_logo_blanc.svg": {
-          "blob": "2ae968cfb5539c41addf1ff500b78992",
-          "name": "premier-service_logo_blanc.svg",
-          "size": 134578,
-          "type": "image/svg+xml"
-        },
-        "premier-service_logo_couleur.svg": {
-          "blob": "ede7bc9a77f344368f093acf1fb57bab",
-          "name": "premier-service_logo_couleur.svg",
-          "size": 134578,
-          "type": "image/svg+xml"
-        }
-      },
-      "name": "Logos",
-      "order": [
-        "premier-service_logo_couleur.svg",
-        "premier-service_logo_blanc.svg",
-        "premier-service_logo-horizontal_couleur.svg",
-        "premier-service_logo-horizontal_blanc.svg",
-        "premier-service_logo-vertical_couleur.svg",
-        "premier-service_logo-vertical_blanc.svg"
-      ],
-      "tile": "l"
-    },
-    "Portraits": {
-      "files": {
-        "premier-service_portrait_agnes-buzyn.jpg": {
-          "blob": "4414043ae77f5745b3cb7f21df1ea70a",
-          "name": "premier-service_portrait_agnes-buzyn.jpg",
-          "size": 130714,
-          "type": "image/jpeg"
-        },
-        "premier-service_portrait_bernard-cazeneuve.jpg": {
-          "blob": "b6bc054b16029753763869f919f9df9b",
-          "name": "premier-service_portrait_bernard-cazeneuve.jpg",
-          "size": 140069,
-          "type": "image/jpeg"
-        },
-        "premier-service_portrait_eric-lombard.jpg": {
-          "blob": "f0480b0d915905d0251eb573d6a1c7d2",
-          "name": "premier-service_portrait_eric-lombard.jpg",
-          "size": 132784,
-          "type": "image/jpeg"
-        },
-        "premier-service_portrait_jacques-attali.jpg": {
-          "blob": "14c90eaf6082861f632d23d5216134c2",
-          "name": "premier-service_portrait_jacques-attali.jpg",
-          "size": 151256,
-          "type": "image/jpeg"
-        },
-        "premier-service_portrait_jerome-guedj.jpg": {
-          "blob": "7c1e435b44052af4539f29fef84a975c",
-          "name": "premier-service_portrait_jerome-guedj.jpg",
-          "size": 154008,
-          "type": "image/jpeg"
-        },
-        "premier-service_portrait_karim-bouamrane.jpg": {
-          "blob": "6469482402ef186105675c74bf606597",
-          "name": "premier-service_portrait_karim-bouamrane.jpg",
-          "size": 133245,
-          "type": "image/jpeg"
-        },
-        "premier-service_portrait_karim-zeribi.jpg": {
-          "blob": "9b38b0a2c810099b1ca0401efb060aab",
-          "name": "premier-service_portrait_karim-zeribi.jpg",
-          "size": 138488,
-          "type": "image/jpeg"
-        },
-        "premier-service_portrait_marie-pierre-vedrenne.jpg": {
-          "blob": "1c4c88714afe02963160cc192cc0ff43",
-          "name": "premier-service_portrait_marie-pierre-vedrenne.jpg",
-          "size": 144345,
-          "type": "image/jpeg"
-        },
-        "premier-service_portrait_matthieu-landon.jpg": {
-          "blob": "efa505eee6091f65dce80376c6a408e5",
-          "name": "premier-service_portrait_matthieu-landon.jpg",
-          "size": 138554,
-          "type": "image/jpeg"
-        },
-        "premier-service_portrait_naima-moutchou.jpg": {
-          "blob": "79badd1183bb37b33ef93297ad65fe74",
-          "name": "premier-service_portrait_naima-moutchou.jpg",
-          "size": 148435,
-          "type": "image/jpeg"
-        },
-        "premier-service_portrait_olivier-faure.jpg": {
-          "blob": "bb5d17370ad20b919e23bc4c7a9f8450",
-          "name": "premier-service_portrait_olivier-faure.jpg",
-          "size": 140987,
-          "type": "image/jpeg"
-        },
-        "premier-service_portrait_valerie-pecresse.jpg": {
-          "blob": "295fa57e26a8831ae7c6c93762443ff1",
-          "name": "premier-service_portrait_valerie-pecresse.jpg",
-          "size": 133368,
-          "type": "image/jpeg"
-        }
-      },
-      "name": "Portraits",
-      "order": [
-        "premier-service_portrait_marie-pierre-vedrenne.jpg",
-        "premier-service_portrait_olivier-faure.jpg",
-        "premier-service_portrait_eric-lombard.jpg",
-        "premier-service_portrait_jerome-guedj.jpg",
-        "premier-service_portrait_valerie-pecresse.jpg",
-        "premier-service_portrait_matthieu-landon.jpg",
-        "premier-service_portrait_karim-zeribi.jpg",
-        "premier-service_portrait_agnes-buzyn.jpg",
-        "premier-service_portrait_jacques-attali.jpg",
-        "premier-service_portrait_karim-bouamrane.jpg",
-        "premier-service_portrait_naima-moutchou.jpg",
-        "premier-service_portrait_bernard-cazeneuve.jpg"
-      ],
-      "tile": "s"
-    },
-    "Portraits-a-table": {
-      "files": {
-        "premier-service_portrait-a-table_agnes-buzyn.png": {
-          "blob": "eeeaf32974ba73b70d2ee5f414699144",
-          "name": "premier-service_portrait-a-table_agnes-buzyn.png",
-          "size": 404062,
-          "type": "image/png"
-        },
-        "premier-service_portrait-a-table_bernard-cazeneuve.png": {
-          "blob": "b2281c650130505ad4e82d8cf2be1f58",
-          "name": "premier-service_portrait-a-table_bernard-cazeneuve.png",
-          "size": 384754,
-          "type": "image/png"
-        },
-        "premier-service_portrait-a-table_eric-lombard.png": {
-          "blob": "c601ac7ff88e378a2353554eaf7eded7",
-          "name": "premier-service_portrait-a-table_eric-lombard.png",
-          "size": 377572,
-          "type": "image/png"
-        },
-        "premier-service_portrait-a-table_jacques-attali.png": {
-          "blob": "882f6168c68d7a60d8961fa2cd1daa6a",
-          "name": "premier-service_portrait-a-table_jacques-attali.png",
-          "size": 403677,
-          "type": "image/png"
-        },
-        "premier-service_portrait-a-table_jerome-guedj.png": {
-          "blob": "022517723f874af41d9ba2f5c8e21068",
-          "name": "premier-service_portrait-a-table_jerome-guedj.png",
-          "size": 409468,
-          "type": "image/png"
-        },
-        "premier-service_portrait-a-table_karim-bouamrane.png": {
-          "blob": "34ca17b2c67cdfffed9a1badfdfb16fe",
-          "name": "premier-service_portrait-a-table_karim-bouamrane.png",
-          "size": 383713,
-          "type": "image/png"
-        },
-        "premier-service_portrait-a-table_karim-zeribi.png": {
-          "blob": "5e1a8f0c546063950eed4dca60508db7",
-          "name": "premier-service_portrait-a-table_karim-zeribi.png",
-          "size": 390194,
-          "type": "image/png"
-        },
-        "premier-service_portrait-a-table_marie-pierre-vedrenne.png": {
-          "blob": "7ba82cb92a8d1bca3270e1cd8d9314ce",
-          "name": "premier-service_portrait-a-table_marie-pierre-vedrenne.png",
-          "size": 409675,
-          "type": "image/png"
-        },
-        "premier-service_portrait-a-table_matthieu-landon.png": {
-          "blob": "f4dbc3410c7b2c6ec53c5c793c8afd74",
-          "name": "premier-service_portrait-a-table_matthieu-landon.png",
-          "size": 389746,
-          "type": "image/png"
-        },
-        "premier-service_portrait-a-table_naima-moutchou.png": {
-          "blob": "269c609e9eb5fe39b0bb22cfdfe71ffd",
-          "name": "premier-service_portrait-a-table_naima-moutchou.png",
-          "size": 413286,
-          "type": "image/png"
-        },
-        "premier-service_portrait-a-table_olivier-faure.png": {
-          "blob": "aa11fbb24cb482883d495ee1c7204879",
-          "name": "premier-service_portrait-a-table_olivier-faure.png",
-          "size": 390538,
-          "type": "image/png"
-        },
-        "premier-service_portrait-a-table_valerie-pecresse.png": {
-          "blob": "76c2783d9786e2e3833b8564b235bfbb",
-          "name": "premier-service_portrait-a-table_valerie-pecresse.png",
-          "size": 399661,
-          "type": "image/png"
-        }
-      },
-      "name": "Portraits-a-table",
-      "order": [
-        "premier-service_portrait-a-table_marie-pierre-vedrenne.png",
-        "premier-service_portrait-a-table_olivier-faure.png",
-        "premier-service_portrait-a-table_eric-lombard.png",
-        "premier-service_portrait-a-table_jerome-guedj.png",
-        "premier-service_portrait-a-table_valerie-pecresse.png",
-        "premier-service_portrait-a-table_matthieu-landon.png",
-        "premier-service_portrait-a-table_karim-zeribi.png",
-        "premier-service_portrait-a-table_agnes-buzyn.png",
-        "premier-service_portrait-a-table_jacques-attali.png",
-        "premier-service_portrait-a-table_karim-bouamrane.png",
-        "premier-service_portrait-a-table_naima-moutchou.png",
-        "premier-service_portrait-a-table_bernard-cazeneuve.png"
-      ],
-      "tile": "s"
-    },
-    "Projections": {
-      "files": {
-        "mockup-affiches.png": {
-          "blob": "121be6bc9f0b76bff0ba77afc620311a",
-          "name": "mockup-affiches.png",
-          "size": 329833,
-          "type": "image/png"
-        },
-        "mockup-instagram.png": {
-          "blob": "fa29d35f73f43d981c85ad885bc95b40",
-          "name": "mockup-instagram.png",
-          "size": 379487,
-          "type": "image/png"
-        },
-        "mockup-linkedin.png": {
-          "blob": "338c11e7be92b3271697d7c0b1d67173",
-          "name": "mockup-linkedin.png",
-          "size": 430794,
-          "type": "image/png"
-        },
-        "mockup-stories.png": {
-          "blob": "c88dfb0ea1bd3ad68f4495d4fcb044e1",
-          "name": "mockup-stories.png",
-          "size": 311809,
-          "type": "image/png"
-        }
-      },
-      "name": "Projections",
-      "order": [
-        "mockup-instagram.png",
-        "mockup-stories.png",
-        "mockup-linkedin.png",
-        "mockup-affiches.png"
-      ],
-      "tile": "l"
-    },
-    "Publications": {
-      "files": {
-        "affiche-lombard.png": {
-          "blob": "18ec6375e020bb8606b62d29af88a5c5",
-          "name": "affiche-lombard.png",
-          "size": 431542,
-          "type": "image/png"
-        },
-        "affiche-vedrenne.png": {
-          "blob": "0223cb0ce5973cd5ccb75f12e162291f",
-          "name": "affiche-vedrenne.png",
-          "size": 470629,
-          "type": "image/png"
-        },
-        "insta-lombard.png": {
-          "blob": "10ce09704f05548921785b53751b422f",
-          "name": "insta-lombard.png",
-          "size": 329032,
-          "type": "image/png"
-        },
-        "insta-vedrenne.png": {
-          "blob": "180424469e47e9459c358486684ffc0c",
-          "name": "insta-vedrenne.png",
-          "size": 361339,
-          "type": "image/png"
-        },
-        "linkedin-lombard.png": {
-          "blob": "d51997bfa628b5ebae6593eb9983d111",
-          "name": "linkedin-lombard.png",
-          "size": 215370,
-          "type": "image/png"
-        },
-        "linkedin-vedrenne.png": {
-          "blob": "e34c9375ff217671d9d0778429c0afbf",
-          "name": "linkedin-vedrenne.png",
-          "size": 239972,
-          "type": "image/png"
-        },
-        "story-lombard.png": {
-          "blob": "e10a315a3fac19ec05f51f08dbfdb574",
-          "name": "story-lombard.png",
-          "size": 471769,
-          "type": "image/png"
-        },
-        "story-vedrenne.png": {
-          "blob": "017b1f4ce30246381be4272f166d2eca",
-          "name": "story-vedrenne.png",
-          "size": 519062,
-          "type": "image/png"
-        }
-      },
-      "name": "Publications",
-      "order": [
-        "insta-vedrenne.png",
-        "insta-lombard.png",
-        "story-vedrenne.png",
-        "story-lombard.png",
-        "linkedin-vedrenne.png",
-        "linkedin-lombard.png",
-        "affiche-vedrenne.png",
-        "affiche-lombard.png"
-      ],
-      "tile": "m"
-    },
-    "Sigle": {
-      "files": {
-        "premier-service_badge_blanc.svg": {
-          "blob": "d82d40acaa57b1d8d9f3e4ba9131887e",
-          "name": "premier-service_badge_blanc.svg",
-          "size": 9601,
-          "type": "image/svg+xml"
-        },
-        "premier-service_badge_couleur.svg": {
-          "blob": "6df80d929b40919944b3d59012930f82",
-          "name": "premier-service_badge_couleur.svg",
-          "size": 9601,
-          "type": "image/svg+xml"
-        },
-        "premier-service_icone.svg": {
-          "blob": "aa24803b0d6e58d0a16bec5e9847402c",
-          "name": "premier-service_icone.svg",
-          "size": 1458,
-          "type": "image/svg+xml"
-        },
-        "premier-service_sigle_blanc.svg": {
-          "blob": "09b695cc613bd516c9ca3dd564354fdd",
-          "name": "premier-service_sigle_blanc.svg",
-          "size": 1392,
-          "type": "image/svg+xml"
-        },
-        "premier-service_sigle_couleur.svg": {
-          "blob": "ea6eea64cc6c22c8b13b12724c062125",
-          "name": "premier-service_sigle_couleur.svg",
-          "size": 1392,
-          "type": "image/svg+xml"
-        }
-      },
-      "name": "Sigle",
-      "order": [
-        "premier-service_sigle_couleur.svg",
-        "premier-service_sigle_blanc.svg",
-        "premier-service_badge_couleur.svg",
-        "premier-service_badge_blanc.svg",
-        "premier-service_icone.svg"
-      ],
-      "tile": "m"
-    },
-    "Portraits-animes": {
-      "name": "Portraits-animes",
-      "tile": "s",
-      "order": [
-        "premier-service_portrait-anime_marie-pierre-vedrenne.mp4",
-        "premier-service_portrait-anime_olivier-faure.mp4",
-        "premier-service_portrait-anime_eric-lombard.mp4",
-        "premier-service_portrait-anime_jerome-guedj.mp4",
-        "premier-service_portrait-anime_valerie-pecresse.mp4",
-        "premier-service_portrait-anime_matthieu-landon.mp4",
-        "premier-service_portrait-anime_karim-zeribi.mp4",
-        "premier-service_portrait-anime_agnes-buzyn.mp4",
-        "premier-service_portrait-anime_jacques-attali.mp4",
-        "premier-service_portrait-anime_karim-bouamrane.mp4",
-        "premier-service_portrait-anime_naima-moutchou.mp4",
-        "premier-service_portrait-anime_bernard-cazeneuve.mp4"
-      ],
-      "files": {
-        "premier-service_portrait-anime_marie-pierre-vedrenne.mp4": {
-          "name": "premier-service_portrait-anime_marie-pierre-vedrenne.mp4",
-          "blob": "c1f4f94d8c61922b06653fb4548be612",
-          "size": 100034,
-          "type": "video/mp4"
-        },
-        "premier-service_portrait-anime_olivier-faure.mp4": {
-          "name": "premier-service_portrait-anime_olivier-faure.mp4",
-          "blob": "1b9cb9aab6c7cd447587f8e3b101cb8e",
-          "size": 89998,
-          "type": "video/mp4"
-        },
-        "premier-service_portrait-anime_eric-lombard.mp4": {
-          "name": "premier-service_portrait-anime_eric-lombard.mp4",
-          "blob": "c2e453c27f65dd960588b227d0de6be9",
-          "size": 72241,
-          "type": "video/mp4"
-        },
-        "premier-service_portrait-anime_jerome-guedj.mp4": {
-          "name": "premier-service_portrait-anime_jerome-guedj.mp4",
-          "blob": "2caf4de6a126b793aaa329881dd4a985",
-          "size": 99811,
-          "type": "video/mp4"
-        },
-        "premier-service_portrait-anime_valerie-pecresse.mp4": {
-          "name": "premier-service_portrait-anime_valerie-pecresse.mp4",
-          "blob": "602357720854913dd02634ab239969e4",
-          "size": 70904,
-          "type": "video/mp4"
-        },
-        "premier-service_portrait-anime_matthieu-landon.mp4": {
-          "name": "premier-service_portrait-anime_matthieu-landon.mp4",
-          "blob": "a234a339195c6dea8e9a63b5cb792eba",
-          "size": 80265,
-          "type": "video/mp4"
-        },
-        "premier-service_portrait-anime_karim-zeribi.mp4": {
-          "name": "premier-service_portrait-anime_karim-zeribi.mp4",
-          "blob": "4d457608774747d61186e6f4a5e4f59b",
-          "size": 81435,
-          "type": "video/mp4"
-        },
-        "premier-service_portrait-anime_agnes-buzyn.mp4": {
-          "name": "premier-service_portrait-anime_agnes-buzyn.mp4",
-          "blob": "8b6d4d131f925adb41b19b5ed237c352",
-          "size": 90645,
-          "type": "video/mp4"
-        },
-        "premier-service_portrait-anime_jacques-attali.mp4": {
-          "name": "premier-service_portrait-anime_jacques-attali.mp4",
-          "blob": "b91a2f7c9168b54295443fb56a780fd6",
-          "size": 92103,
-          "type": "video/mp4"
-        },
-        "premier-service_portrait-anime_karim-bouamrane.mp4": {
-          "name": "premier-service_portrait-anime_karim-bouamrane.mp4",
-          "blob": "f37782d273fa97c2cf44a32fa884afb2",
-          "size": 81408,
-          "type": "video/mp4"
-        },
-        "premier-service_portrait-anime_naima-moutchou.mp4": {
-          "name": "premier-service_portrait-anime_naima-moutchou.mp4",
-          "blob": "e2d77be3608523b4951f605a82391bfb",
-          "size": 115396,
-          "type": "video/mp4"
-        },
-        "premier-service_portrait-anime_bernard-cazeneuve.mp4": {
-          "name": "premier-service_portrait-anime_bernard-cazeneuve.mp4",
-          "blob": "600dcb090fe00fee4e3cb5951f871f92",
-          "size": 80111,
-          "type": "video/mp4"
-        }
-      }
+    "sigle-construction.png": {
+     "blob": "8a8d75b2ff10ada7cad174afbc0622da",
+     "name": "sigle-construction.png",
+     "size": 117680,
+     "type": "image/png"
     }
+   },
+   "name": "Construction",
+   "order": [
+    "logo-construction.png",
+    "sigle-construction.png"
+   ],
+   "tile": "l"
   },
-  "blobs": {},
-  "createdOnFiles": {
-    "at": "2026-11-13T15:52:05Z",
-    "v": 1
+  "Les-Argonautes": {
+   "files": {
+    "les-argonautes_logo_fond-clair.svg": {
+     "blob": "3806dc330996f361dbbcbdfbc1038150",
+     "name": "les-argonautes_logo_fond-clair.svg",
+     "size": 4841,
+     "type": "image/svg+xml"
+    },
+    "les-argonautes_logo_fond-sombre.svg": {
+     "blob": "0cf28a7c7e414e4d914fb564848d05af",
+     "name": "les-argonautes_logo_fond-sombre.svg",
+     "size": 4841,
+     "type": "image/svg+xml"
+    },
+    "les-argonautes_monogramme_fond-clair.svg": {
+     "blob": "e71ccb093f07c817674bec140f6988ce",
+     "name": "les-argonautes_monogramme_fond-clair.svg",
+     "size": 691,
+     "type": "image/svg+xml"
+    },
+    "les-argonautes_monogramme_fond-sombre.svg": {
+     "blob": "985d0f48cf8e0d39949c7faa21b059fc",
+     "name": "les-argonautes_monogramme_fond-sombre.svg",
+     "size": 691,
+     "type": "image/svg+xml"
+    }
+   },
+   "name": "Les-Argonautes",
+   "order": [
+    "les-argonautes_logo_fond-clair.svg",
+    "les-argonautes_logo_fond-sombre.svg",
+    "les-argonautes_monogramme_fond-clair.svg",
+    "les-argonautes_monogramme_fond-sombre.svg"
+   ],
+   "tile": "m"
   },
-  "docs": {
-    "readme": "project/README.md",
-    "sections": []
+  "Logos": {
+   "files": {
+    "premier-service_logo-horizontal_blanc.svg": {
+     "blob": "ff9f9f65042a4598b177eb74651c8788",
+     "name": "premier-service_logo-horizontal_blanc.svg",
+     "size": 135878,
+     "type": "image/svg+xml"
+    },
+    "premier-service_logo-horizontal_couleur.svg": {
+     "blob": "00fb24f9f49e983f65ce7eaec00b227a",
+     "name": "premier-service_logo-horizontal_couleur.svg",
+     "size": 135878,
+     "type": "image/svg+xml"
+    },
+    "premier-service_logo-vertical_blanc.svg": {
+     "blob": "de5dda4ee6ff54763bfe39ab8c678f7c",
+     "name": "premier-service_logo-vertical_blanc.svg",
+     "size": 135878,
+     "type": "image/svg+xml"
+    },
+    "premier-service_logo-vertical_couleur.svg": {
+     "blob": "a2be26f89df5b48a742dfc8cf6d1181a",
+     "name": "premier-service_logo-vertical_couleur.svg",
+     "size": 135878,
+     "type": "image/svg+xml"
+    },
+    "premier-service_logo_blanc.svg": {
+     "blob": "2ae968cfb5539c41addf1ff500b78992",
+     "name": "premier-service_logo_blanc.svg",
+     "size": 134578,
+     "type": "image/svg+xml"
+    },
+    "premier-service_logo_couleur.svg": {
+     "blob": "ede7bc9a77f344368f093acf1fb57bab",
+     "name": "premier-service_logo_couleur.svg",
+     "size": 134578,
+     "type": "image/svg+xml"
+    }
+   },
+   "name": "Logos",
+   "order": [
+    "premier-service_logo_couleur.svg",
+    "premier-service_logo_blanc.svg",
+    "premier-service_logo-horizontal_couleur.svg",
+    "premier-service_logo-horizontal_blanc.svg",
+    "premier-service_logo-vertical_couleur.svg",
+    "premier-service_logo-vertical_blanc.svg"
+   ],
+   "tile": "l"
   },
-  "groups": [
-    "Logos",
-    "Sigle",
-    "Construction",
-    "Portraits-a-table",
-    "Portraits",
-    "Portraits-animes",
-    "Publications",
-    "Projections",
-    "Les-Argonautes"
-  ],
-  "lastChange": {
-    "by": "Abdes",
-    "at": "2026-11-13T17:32:16Z",
-    "via": "Claude",
-    "note": "Ajout des douze portraits animés ; dates à la place des numéros de rendez-vous."
+  "Portraits": {
+   "files": {
+    "premier-service_portrait_agnes-buzyn.jpg": {
+     "blob": "4414043ae77f5745b3cb7f21df1ea70a",
+     "name": "premier-service_portrait_agnes-buzyn.jpg",
+     "size": 130714,
+     "type": "image/jpeg"
+    },
+    "premier-service_portrait_bernard-cazeneuve.jpg": {
+     "blob": "b6bc054b16029753763869f919f9df9b",
+     "name": "premier-service_portrait_bernard-cazeneuve.jpg",
+     "size": 140069,
+     "type": "image/jpeg"
+    },
+    "premier-service_portrait_eric-lombard.jpg": {
+     "blob": "f0480b0d915905d0251eb573d6a1c7d2",
+     "name": "premier-service_portrait_eric-lombard.jpg",
+     "size": 132784,
+     "type": "image/jpeg"
+    },
+    "premier-service_portrait_jacques-attali.jpg": {
+     "blob": "14c90eaf6082861f632d23d5216134c2",
+     "name": "premier-service_portrait_jacques-attali.jpg",
+     "size": 151256,
+     "type": "image/jpeg"
+    },
+    "premier-service_portrait_jerome-guedj.jpg": {
+     "blob": "7c1e435b44052af4539f29fef84a975c",
+     "name": "premier-service_portrait_jerome-guedj.jpg",
+     "size": 154008,
+     "type": "image/jpeg"
+    },
+    "premier-service_portrait_karim-bouamrane.jpg": {
+     "blob": "6469482402ef186105675c74bf606597",
+     "name": "premier-service_portrait_karim-bouamrane.jpg",
+     "size": 133245,
+     "type": "image/jpeg"
+    },
+    "premier-service_portrait_karim-zeribi.jpg": {
+     "blob": "9b38b0a2c810099b1ca0401efb060aab",
+     "name": "premier-service_portrait_karim-zeribi.jpg",
+     "size": 138488,
+     "type": "image/jpeg"
+    },
+    "premier-service_portrait_marie-pierre-vedrenne.jpg": {
+     "blob": "1c4c88714afe02963160cc192cc0ff43",
+     "name": "premier-service_portrait_marie-pierre-vedrenne.jpg",
+     "size": 144345,
+     "type": "image/jpeg"
+    },
+    "premier-service_portrait_matthieu-landon.jpg": {
+     "blob": "efa505eee6091f65dce80376c6a408e5",
+     "name": "premier-service_portrait_matthieu-landon.jpg",
+     "size": 138554,
+     "type": "image/jpeg"
+    },
+    "premier-service_portrait_naima-moutchou.jpg": {
+     "blob": "79badd1183bb37b33ef93297ad65fe74",
+     "name": "premier-service_portrait_naima-moutchou.jpg",
+     "size": 148435,
+     "type": "image/jpeg"
+    },
+    "premier-service_portrait_olivier-faure.jpg": {
+     "blob": "bb5d17370ad20b919e23bc4c7a9f8450",
+     "name": "premier-service_portrait_olivier-faure.jpg",
+     "size": 140987,
+     "type": "image/jpeg"
+    },
+    "premier-service_portrait_valerie-pecresse.jpg": {
+     "blob": "295fa57e26a8831ae7c6c93762443ff1",
+     "name": "premier-service_portrait_valerie-pecresse.jpg",
+     "size": 133368,
+     "type": "image/jpeg"
+    }
+   },
+   "name": "Portraits",
+   "order": [
+    "premier-service_portrait_marie-pierre-vedrenne.jpg",
+    "premier-service_portrait_olivier-faure.jpg",
+    "premier-service_portrait_eric-lombard.jpg",
+    "premier-service_portrait_jerome-guedj.jpg",
+    "premier-service_portrait_valerie-pecresse.jpg",
+    "premier-service_portrait_matthieu-landon.jpg",
+    "premier-service_portrait_karim-zeribi.jpg",
+    "premier-service_portrait_agnes-buzyn.jpg",
+    "premier-service_portrait_jacques-attali.jpg",
+    "premier-service_portrait_karim-bouamrane.jpg",
+    "premier-service_portrait_naima-moutchou.jpg",
+    "premier-service_portrait_bernard-cazeneuve.jpg"
+   ],
+   "tile": "s"
   },
-  "layout": "files",
-  "libraries": [],
-  "namespace": "PremierService",
-  "sections": {},
-  "title": "Premier Service"
+  "Portraits-a-table": {
+   "files": {
+    "premier-service_portrait-a-table_agnes-buzyn.png": {
+     "blob": "eeeaf32974ba73b70d2ee5f414699144",
+     "name": "premier-service_portrait-a-table_agnes-buzyn.png",
+     "size": 404062,
+     "type": "image/png"
+    },
+    "premier-service_portrait-a-table_bernard-cazeneuve.png": {
+     "blob": "b2281c650130505ad4e82d8cf2be1f58",
+     "name": "premier-service_portrait-a-table_bernard-cazeneuve.png",
+     "size": 384754,
+     "type": "image/png"
+    },
+    "premier-service_portrait-a-table_eric-lombard.png": {
+     "blob": "c601ac7ff88e378a2353554eaf7eded7",
+     "name": "premier-service_portrait-a-table_eric-lombard.png",
+     "size": 377572,
+     "type": "image/png"
+    },
+    "premier-service_portrait-a-table_jacques-attali.png": {
+     "blob": "882f6168c68d7a60d8961fa2cd1daa6a",
+     "name": "premier-service_portrait-a-table_jacques-attali.png",
+     "size": 403677,
+     "type": "image/png"
+    },
+    "premier-service_portrait-a-table_jerome-guedj.png": {
+     "blob": "022517723f874af41d9ba2f5c8e21068",
+     "name": "premier-service_portrait-a-table_jerome-guedj.png",
+     "size": 409468,
+     "type": "image/png"
+    },
+    "premier-service_portrait-a-table_karim-bouamrane.png": {
+     "blob": "34ca17b2c67cdfffed9a1badfdfb16fe",
+     "name": "premier-service_portrait-a-table_karim-bouamrane.png",
+     "size": 383713,
+     "type": "image/png"
+    },
+    "premier-service_portrait-a-table_karim-zeribi.png": {
+     "blob": "5e1a8f0c546063950eed4dca60508db7",
+     "name": "premier-service_portrait-a-table_karim-zeribi.png",
+     "size": 390194,
+     "type": "image/png"
+    },
+    "premier-service_portrait-a-table_marie-pierre-vedrenne.png": {
+     "blob": "7ba82cb92a8d1bca3270e1cd8d9314ce",
+     "name": "premier-service_portrait-a-table_marie-pierre-vedrenne.png",
+     "size": 409675,
+     "type": "image/png"
+    },
+    "premier-service_portrait-a-table_matthieu-landon.png": {
+     "blob": "f4dbc3410c7b2c6ec53c5c793c8afd74",
+     "name": "premier-service_portrait-a-table_matthieu-landon.png",
+     "size": 389746,
+     "type": "image/png"
+    },
+    "premier-service_portrait-a-table_naima-moutchou.png": {
+     "blob": "269c609e9eb5fe39b0bb22cfdfe71ffd",
+     "name": "premier-service_portrait-a-table_naima-moutchou.png",
+     "size": 413286,
+     "type": "image/png"
+    },
+    "premier-service_portrait-a-table_olivier-faure.png": {
+     "blob": "aa11fbb24cb482883d495ee1c7204879",
+     "name": "premier-service_portrait-a-table_olivier-faure.png",
+     "size": 390538,
+     "type": "image/png"
+    },
+    "premier-service_portrait-a-table_valerie-pecresse.png": {
+     "blob": "76c2783d9786e2e3833b8564b235bfbb",
+     "name": "premier-service_portrait-a-table_valerie-pecresse.png",
+     "size": 399661,
+     "type": "image/png"
+    }
+   },
+   "name": "Portraits-a-table",
+   "order": [
+    "premier-service_portrait-a-table_marie-pierre-vedrenne.png",
+    "premier-service_portrait-a-table_olivier-faure.png",
+    "premier-service_portrait-a-table_eric-lombard.png",
+    "premier-service_portrait-a-table_jerome-guedj.png",
+    "premier-service_portrait-a-table_valerie-pecresse.png",
+    "premier-service_portrait-a-table_matthieu-landon.png",
+    "premier-service_portrait-a-table_karim-zeribi.png",
+    "premier-service_portrait-a-table_agnes-buzyn.png",
+    "premier-service_portrait-a-table_jacques-attali.png",
+    "premier-service_portrait-a-table_karim-bouamrane.png",
+    "premier-service_portrait-a-table_naima-moutchou.png",
+    "premier-service_portrait-a-table_bernard-cazeneuve.png"
+   ],
+   "tile": "s"
+  },
+  "Projections": {
+   "files": {
+    "mockup-affiches.png": {
+     "blob": "121be6bc9f0b76bff0ba77afc620311a",
+     "name": "mockup-affiches.png",
+     "size": 329833,
+     "type": "image/png"
+    },
+    "mockup-instagram.png": {
+     "blob": "fa29d35f73f43d981c85ad885bc95b40",
+     "name": "mockup-instagram.png",
+     "size": 379487,
+     "type": "image/png"
+    },
+    "mockup-linkedin.png": {
+     "blob": "338c11e7be92b3271697d7c0b1d67173",
+     "name": "mockup-linkedin.png",
+     "size": 430794,
+     "type": "image/png"
+    },
+    "mockup-stories.png": {
+     "blob": "c88dfb0ea1bd3ad68f4495d4fcb044e1",
+     "name": "mockup-stories.png",
+     "size": 311809,
+     "type": "image/png"
+    }
+   },
+   "name": "Projections",
+   "order": [
+    "mockup-instagram.png",
+    "mockup-stories.png",
+    "mockup-linkedin.png",
+    "mockup-affiches.png"
+   ],
+   "tile": "l"
+  },
+  "Publications": {
+   "files": {
+    "affiche-lombard.png": {
+     "blob": "18ec6375e020bb8606b62d29af88a5c5",
+     "name": "affiche-lombard.png",
+     "size": 431542,
+     "type": "image/png"
+    },
+    "affiche-vedrenne.png": {
+     "blob": "0223cb0ce5973cd5ccb75f12e162291f",
+     "name": "affiche-vedrenne.png",
+     "size": 470629,
+     "type": "image/png"
+    },
+    "insta-lombard.png": {
+     "blob": "10ce09704f05548921785b53751b422f",
+     "name": "insta-lombard.png",
+     "size": 329032,
+     "type": "image/png"
+    },
+    "insta-vedrenne.png": {
+     "blob": "180424469e47e9459c358486684ffc0c",
+     "name": "insta-vedrenne.png",
+     "size": 361339,
+     "type": "image/png"
+    },
+    "linkedin-lombard.png": {
+     "blob": "d51997bfa628b5ebae6593eb9983d111",
+     "name": "linkedin-lombard.png",
+     "size": 215370,
+     "type": "image/png"
+    },
+    "linkedin-vedrenne.png": {
+     "blob": "e34c9375ff217671d9d0778429c0afbf",
+     "name": "linkedin-vedrenne.png",
+     "size": 239972,
+     "type": "image/png"
+    },
+    "story-lombard.png": {
+     "blob": "e10a315a3fac19ec05f51f08dbfdb574",
+     "name": "story-lombard.png",
+     "size": 471769,
+     "type": "image/png"
+    },
+    "story-vedrenne.png": {
+     "blob": "017b1f4ce30246381be4272f166d2eca",
+     "name": "story-vedrenne.png",
+     "size": 519062,
+     "type": "image/png"
+    }
+   },
+   "name": "Publications",
+   "order": [
+    "insta-vedrenne.png",
+    "insta-lombard.png",
+    "story-vedrenne.png",
+    "story-lombard.png",
+    "linkedin-vedrenne.png",
+    "linkedin-lombard.png",
+    "affiche-vedrenne.png",
+    "affiche-lombard.png"
+   ],
+   "tile": "m"
+  },
+  "Sigle": {
+   "files": {
+    "premier-service_badge_blanc.svg": {
+     "blob": "d82d40acaa57b1d8d9f3e4ba9131887e",
+     "name": "premier-service_badge_blanc.svg",
+     "size": 9601,
+     "type": "image/svg+xml"
+    },
+    "premier-service_badge_couleur.svg": {
+     "blob": "6df80d929b40919944b3d59012930f82",
+     "name": "premier-service_badge_couleur.svg",
+     "size": 9601,
+     "type": "image/svg+xml"
+    },
+    "premier-service_icone.svg": {
+     "blob": "aa24803b0d6e58d0a16bec5e9847402c",
+     "name": "premier-service_icone.svg",
+     "size": 1458,
+     "type": "image/svg+xml"
+    },
+    "premier-service_sigle_blanc.svg": {
+     "blob": "09b695cc613bd516c9ca3dd564354fdd",
+     "name": "premier-service_sigle_blanc.svg",
+     "size": 1392,
+     "type": "image/svg+xml"
+    },
+    "premier-service_sigle_couleur.svg": {
+     "blob": "ea6eea64cc6c22c8b13b12724c062125",
+     "name": "premier-service_sigle_couleur.svg",
+     "size": 1392,
+     "type": "image/svg+xml"
+    }
+   },
+   "name": "Sigle",
+   "order": [
+    "premier-service_sigle_couleur.svg",
+    "premier-service_sigle_blanc.svg",
+    "premier-service_badge_couleur.svg",
+    "premier-service_badge_blanc.svg",
+    "premier-service_icone.svg"
+   ],
+   "tile": "m"
+  },
+  "Portraits-animes": {
+   "name": "Portraits-animes",
+   "tile": "s",
+   "order": [
+    "premier-service_portrait-anime_marie-pierre-vedrenne.mp4",
+    "premier-service_portrait-anime_olivier-faure.mp4",
+    "premier-service_portrait-anime_eric-lombard.mp4",
+    "premier-service_portrait-anime_jerome-guedj.mp4",
+    "premier-service_portrait-anime_valerie-pecresse.mp4",
+    "premier-service_portrait-anime_matthieu-landon.mp4",
+    "premier-service_portrait-anime_karim-zeribi.mp4",
+    "premier-service_portrait-anime_agnes-buzyn.mp4",
+    "premier-service_portrait-anime_jacques-attali.mp4",
+    "premier-service_portrait-anime_karim-bouamrane.mp4",
+    "premier-service_portrait-anime_naima-moutchou.mp4",
+    "premier-service_portrait-anime_bernard-cazeneuve.mp4"
+   ],
+   "files": {
+    "premier-service_portrait-anime_marie-pierre-vedrenne.mp4": {
+     "name": "premier-service_portrait-anime_marie-pierre-vedrenne.mp4",
+     "blob": "c1f4f94d8c61922b06653fb4548be612",
+     "size": 100034,
+     "type": "video/mp4"
+    },
+    "premier-service_portrait-anime_olivier-faure.mp4": {
+     "name": "premier-service_portrait-anime_olivier-faure.mp4",
+     "blob": "1b9cb9aab6c7cd447587f8e3b101cb8e",
+     "size": 89998,
+     "type": "video/mp4"
+    },
+    "premier-service_portrait-anime_eric-lombard.mp4": {
+     "name": "premier-service_portrait-anime_eric-lombard.mp4",
+     "blob": "c2e453c27f65dd960588b227d0de6be9",
+     "size": 72241,
+     "type": "video/mp4"
+    },
+    "premier-service_portrait-anime_jerome-guedj.mp4": {
+     "name": "premier-service_portrait-anime_jerome-guedj.mp4",
+     "blob": "2caf4de6a126b793aaa329881dd4a985",
+     "size": 99811,
+     "type": "video/mp4"
+    },
+    "premier-service_portrait-anime_valerie-pecresse.mp4": {
+     "name": "premier-service_portrait-anime_valerie-pecresse.mp4",
+     "blob": "602357720854913dd02634ab239969e4",
+     "size": 70904,
+     "type": "video/mp4"
+    },
+    "premier-service_portrait-anime_matthieu-landon.mp4": {
+     "name": "premier-service_portrait-anime_matthieu-landon.mp4",
+     "blob": "a234a339195c6dea8e9a63b5cb792eba",
+     "size": 80265,
+     "type": "video/mp4"
+    },
+    "premier-service_portrait-anime_karim-zeribi.mp4": {
+     "name": "premier-service_portrait-anime_karim-zeribi.mp4",
+     "blob": "4d457608774747d61186e6f4a5e4f59b",
+     "size": 81435,
+     "type": "video/mp4"
+    },
+    "premier-service_portrait-anime_agnes-buzyn.mp4": {
+     "name": "premier-service_portrait-anime_agnes-buzyn.mp4",
+     "blob": "8b6d4d131f925adb41b19b5ed237c352",
+     "size": 90645,
+     "type": "video/mp4"
+    },
+    "premier-service_portrait-anime_jacques-attali.mp4": {
+     "name": "premier-service_portrait-anime_jacques-attali.mp4",
+     "blob": "b91a2f7c9168b54295443fb56a780fd6",
+     "size": 92103,
+     "type": "video/mp4"
+    },
+    "premier-service_portrait-anime_karim-bouamrane.mp4": {
+     "name": "premier-service_portrait-anime_karim-bouamrane.mp4",
+     "blob": "f37782d273fa97c2cf44a32fa884afb2",
+     "size": 81408,
+     "type": "video/mp4"
+    },
+    "premier-service_portrait-anime_naima-moutchou.mp4": {
+     "name": "premier-service_portrait-anime_naima-moutchou.mp4",
+     "blob": "e2d77be3608523b4951f605a82391bfb",
+     "size": 115396,
+     "type": "video/mp4"
+    },
+    "premier-service_portrait-anime_bernard-cazeneuve.mp4": {
+     "name": "premier-service_portrait-anime_bernard-cazeneuve.mp4",
+     "blob": "600dcb090fe00fee4e3cb5951f871f92",
+     "size": 80111,
+     "type": "video/mp4"
+    }
+   }
+  },
+  "Fondateurs": {
+   "name": "Fondateurs",
+   "tile": "l",
+   "order": [
+    "premier-service_fondateurs_photo-equipe.jpg",
+    "premier-service_fondateur_thawben-berka.jpg",
+    "premier-service_fondateur_lara-fourneau.jpg",
+    "premier-service_fondateur_louis-pemot.jpg",
+    "premier-service_fiche_thawben-berka.pdf",
+    "premier-service_fiche_lara-fourneau.pdf",
+    "premier-service_fiche_louis-pemot.pdf",
+    "premier-service_fondateurs.mp4",
+    "premier-service_fondateurs_affiche.jpg"
+   ],
+   "files": {
+    "premier-service_fondateurs.mp4": {
+     "name": "premier-service_fondateurs.mp4",
+     "blob": "2d37211536536fafdb154d30149b97ba",
+     "size": 1901152,
+     "type": "video/mp4"
+    },
+    "premier-service_fondateurs_affiche.jpg": {
+     "name": "premier-service_fondateurs_affiche.jpg",
+     "blob": "cc11aed4e1dfd14fba2513f043fddf65",
+     "size": 131551,
+     "type": "image/jpeg"
+    },
+    "premier-service_fondateurs_photo-equipe.jpg": {
+     "name": "premier-service_fondateurs_photo-equipe.jpg",
+     "blob": "6d1e734946844a0ad997d8bfcfe6d33c",
+     "size": 334233,
+     "type": "image/jpeg"
+    },
+    "premier-service_fondateur_thawben-berka.jpg": {
+     "name": "premier-service_fondateur_thawben-berka.jpg",
+     "blob": "2d9d3246e060628627242aaadbd3787f",
+     "size": 362852,
+     "type": "image/jpeg"
+    },
+    "premier-service_fondateur_lara-fourneau.jpg": {
+     "name": "premier-service_fondateur_lara-fourneau.jpg",
+     "blob": "c2a442bf65a6ebdb3dc4fcd1e54c06e1",
+     "size": 377011,
+     "type": "image/jpeg"
+    },
+    "premier-service_fondateur_louis-pemot.jpg": {
+     "name": "premier-service_fondateur_louis-pemot.jpg",
+     "blob": "f18cba1370d70258bc7ab2210b77e0bb",
+     "size": 372930,
+     "type": "image/jpeg"
+    },
+    "premier-service_fiche_thawben-berka.pdf": {
+     "name": "premier-service_fiche_thawben-berka.pdf",
+     "blob": "819f542ea73d560efdc77839f5040b24",
+     "size": 6368375,
+     "type": "application/pdf"
+    },
+    "premier-service_fiche_lara-fourneau.pdf": {
+     "name": "premier-service_fiche_lara-fourneau.pdf",
+     "blob": "8cf88d2d3c137dcc545f0facbe077675",
+     "size": 4359408,
+     "type": "application/pdf"
+    },
+    "premier-service_fiche_louis-pemot.pdf": {
+     "name": "premier-service_fiche_louis-pemot.pdf",
+     "blob": "e6e71a482bba4cdf9630250d395a11d6",
+     "size": 5637103,
+     "type": "application/pdf"
+    }
+   }
+  },
+  "Audiovisuel": {
+   "name": "Audiovisuel",
+   "tile": "l",
+   "order": [
+    "premier-service_film-master_storyboard.png",
+    "premier-service_film-master_script.png",
+    "premier-service_capsule-beauvau_script.png",
+    "premier-service_film-master_script-storyboard.pdf",
+    "premier-service_capsule-beauvau_script.pdf"
+   ],
+   "files": {
+    "premier-service_film-master_storyboard.png": {
+     "name": "premier-service_film-master_storyboard.png",
+     "blob": "55dac27406a81c3cb1c7d1eb28f15555",
+     "size": 501646,
+     "type": "image/png"
+    },
+    "premier-service_film-master_script.png": {
+     "name": "premier-service_film-master_script.png",
+     "blob": "262b879d0c6fd4ecad0e3238b55e8e8f",
+     "size": 444085,
+     "type": "image/png"
+    },
+    "premier-service_capsule-beauvau_script.png": {
+     "name": "premier-service_capsule-beauvau_script.png",
+     "blob": "fc4cb3cca9fdde53ba8bb0c7d43a760f",
+     "size": 355755,
+     "type": "image/png"
+    },
+    "premier-service_film-master_script-storyboard.pdf": {
+     "name": "premier-service_film-master_script-storyboard.pdf",
+     "blob": "d1c997b3b7e0631204bc230e1d9af606",
+     "size": 1724052,
+     "type": "application/pdf"
+    },
+    "premier-service_capsule-beauvau_script.pdf": {
+     "name": "premier-service_capsule-beauvau_script.pdf",
+     "blob": "b2b96b5f4bcd5d1a4327d9ae81c79189",
+     "size": 1380334,
+     "type": "application/pdf"
+    }
+   }
+  },
+  "Reseaux-sociaux": {
+   "name": "Reseaux-sociaux",
+   "tile": "s",
+   "order": [
+    "premier-service_post_c1-01.png",
+    "premier-service_post_c1-02.png",
+    "premier-service_post_c1-03.png",
+    "premier-service_post_c1-04.png",
+    "premier-service_post_c1-05.png",
+    "premier-service_post_c1-06.png",
+    "premier-service_post_c3-01.png",
+    "premier-service_post_c3-02.png",
+    "premier-service_post_c3-03.png",
+    "premier-service_post_c3-04.png",
+    "premier-service_post_c3-05.png",
+    "premier-service_post_c3-06.png",
+    "premier-service_post_c3-07.png",
+    "premier-service_post_c4-01.png",
+    "premier-service_post_c4-02.png",
+    "premier-service_post_c4-03.png",
+    "premier-service_post_c4-04.png",
+    "premier-service_post_c4-05.png",
+    "premier-service_post_v-couverture-9x16.png",
+    "premier-service_post_v-fin-argonautes-9x16.png",
+    "premier-service_c1_linkedin.pdf",
+    "premier-service_c3_linkedin.pdf",
+    "premier-service_c4_linkedin.pdf"
+   ],
+   "files": {
+    "premier-service_post_c1-01.png": {
+     "name": "premier-service_post_c1-01.png",
+     "blob": "9919b5e2a43c5ea2881dab6e2ba914f3",
+     "size": 92865,
+     "type": "image/png"
+    },
+    "premier-service_post_c1-02.png": {
+     "name": "premier-service_post_c1-02.png",
+     "blob": "adb0125ec951ae73140725f44230c8a4",
+     "size": 91100,
+     "type": "image/png"
+    },
+    "premier-service_post_c1-03.png": {
+     "name": "premier-service_post_c1-03.png",
+     "blob": "0fce8c97f08c81bd407084d70f8279f1",
+     "size": 100500,
+     "type": "image/png"
+    },
+    "premier-service_post_c1-04.png": {
+     "name": "premier-service_post_c1-04.png",
+     "blob": "2a7b6d1fc2fc77e6bf4cd7ab819c23f7",
+     "size": 89554,
+     "type": "image/png"
+    },
+    "premier-service_post_c1-05.png": {
+     "name": "premier-service_post_c1-05.png",
+     "blob": "41a6532a7a97fb5808d3daa2dc38dce0",
+     "size": 62938,
+     "type": "image/png"
+    },
+    "premier-service_post_c1-06.png": {
+     "name": "premier-service_post_c1-06.png",
+     "blob": "8345b62d9480fbe8796631f89851c934",
+     "size": 76264,
+     "type": "image/png"
+    },
+    "premier-service_post_c3-01.png": {
+     "name": "premier-service_post_c3-01.png",
+     "blob": "06eaf16ab8032730d8717fb9130cf342",
+     "size": 76525,
+     "type": "image/png"
+    },
+    "premier-service_post_c3-02.png": {
+     "name": "premier-service_post_c3-02.png",
+     "blob": "990dbc82d3aefdfc013d9f7119a569d2",
+     "size": 81899,
+     "type": "image/png"
+    },
+    "premier-service_post_c3-03.png": {
+     "name": "premier-service_post_c3-03.png",
+     "blob": "ede0ae444aa32b72ca47d6be5085b5a7",
+     "size": 76613,
+     "type": "image/png"
+    },
+    "premier-service_post_c3-04.png": {
+     "name": "premier-service_post_c3-04.png",
+     "blob": "9345beca4a79430f6c282f72eb6d26e2",
+     "size": 76462,
+     "type": "image/png"
+    },
+    "premier-service_post_c3-05.png": {
+     "name": "premier-service_post_c3-05.png",
+     "blob": "031d003cb67572b309c33e04872c6cdf",
+     "size": 594834,
+     "type": "image/png"
+    },
+    "premier-service_post_c3-06.png": {
+     "name": "premier-service_post_c3-06.png",
+     "blob": "a0a137d9d6e9f918d9e585fd71c6b152",
+     "size": 103595,
+     "type": "image/png"
+    },
+    "premier-service_post_c3-07.png": {
+     "name": "premier-service_post_c3-07.png",
+     "blob": "90e57fa4c38e3bba2b8f64090ae92346",
+     "size": 76698,
+     "type": "image/png"
+    },
+    "premier-service_post_c4-01.png": {
+     "name": "premier-service_post_c4-01.png",
+     "blob": "38fead49d4a9e985d6c504d725cb9e68",
+     "size": 558644,
+     "type": "image/png"
+    },
+    "premier-service_post_c4-02.png": {
+     "name": "premier-service_post_c4-02.png",
+     "blob": "92d6b824417d719ce6fa294af2e56fd8",
+     "size": 129418,
+     "type": "image/png"
+    },
+    "premier-service_post_c4-03.png": {
+     "name": "premier-service_post_c4-03.png",
+     "blob": "54e3b6b82fd0edaadf716b813d1b5bbb",
+     "size": 104030,
+     "type": "image/png"
+    },
+    "premier-service_post_c4-04.png": {
+     "name": "premier-service_post_c4-04.png",
+     "blob": "af319eba2908d26b30536909c41277ff",
+     "size": 125279,
+     "type": "image/png"
+    },
+    "premier-service_post_c4-05.png": {
+     "name": "premier-service_post_c4-05.png",
+     "blob": "178fde0f009eeb7af4d17294a62ac5af",
+     "size": 76429,
+     "type": "image/png"
+    },
+    "premier-service_post_v-couverture-9x16.png": {
+     "name": "premier-service_post_v-couverture-9x16.png",
+     "blob": "ab27d4c295e0531687ae2f71782b13ce",
+     "size": 89852,
+     "type": "image/png"
+    },
+    "premier-service_post_v-fin-argonautes-9x16.png": {
+     "name": "premier-service_post_v-fin-argonautes-9x16.png",
+     "blob": "04de413c17f0295893076c754be66dc9",
+     "size": 95257,
+     "type": "image/png"
+    },
+    "premier-service_c1_linkedin.pdf": {
+     "name": "premier-service_c1_linkedin.pdf",
+     "blob": "00963c8bf664d56707e947e7fbe60c6f",
+     "size": 461502,
+     "type": "application/pdf"
+    },
+    "premier-service_c3_linkedin.pdf": {
+     "name": "premier-service_c3_linkedin.pdf",
+     "blob": "f74f37e9663966dd0229e607a4dc77d8",
+     "size": 536069,
+     "type": "application/pdf"
+    },
+    "premier-service_c4_linkedin.pdf": {
+     "name": "premier-service_c4_linkedin.pdf",
+     "blob": "b08b64c4327e0d914c2bbc55aea4dc24",
+     "size": 422498,
+     "type": "application/pdf"
+    }
+   }
+  }
+ },
+ "blobs": {},
+ "createdOnFiles": {
+  "at": "2026-11-13T15:52:05Z",
+  "v": 1
+ },
+ "docs": {
+  "readme": "project/README.md",
+  "sections": []
+ },
+ "groups": [
+  "Logos",
+  "Sigle",
+  "Construction",
+  "Fondateurs",
+  "Portraits-a-table",
+  "Portraits",
+  "Portraits-animes",
+  "Reseaux-sociaux",
+  "Publications",
+  "Projections",
+  "Audiovisuel",
+  "Les-Argonautes"
+ ],
+ "lastChange": {
+  "by": "Abdes",
+  "at": "2026-11-13T19:45:00Z",
+  "via": "Claude (Cowork)",
+  "note": "v2 maître : site, réseaux sociaux, audiovisuel, fondateurs (visuel principal), cartouche Les Argonautes, Guedj au 2 décembre"
+ },
+ "layout": "files",
+ "libraries": [],
+ "namespace": "PremierService",
+ "sections": {},
+ "title": "Premier Service"
 }

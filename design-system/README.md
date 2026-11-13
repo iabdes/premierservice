@@ -1,60 +1,99 @@
-Premier Service réunit dix étudiants et une personnalité publique autour d’une table, à huis clos, dans un lieu de l’action publique. L’initiative est fondée par Louis Pemot, Lara Fourneau et Thawben Berka, avec le soutien des Argonautes. Ce système sert à produire tout ce qui la montre : publications, affiches, présentations, invitations, vidéos.
+Premier Service réunit dix étudiants et une personnalité de la vie publique autour d’une table, à huis clos, pour un dîner ou un petit-déjeuner. Après la table, les participants rejoignent le club sur Alumni Platform. L’initiative est fondée par Thawben Berka, Lara Fourneau et Louis Pemot, avec le soutien des Argonautes.
+
+Ce système est **l’élément maître** de la marque. Toute production (site, publications, carrousels, vidéos, présentations, affiches, portraits, documents) part d’ici, et la compétence d’agent graphique et community manager s’appuie dessus. Version 2 du 13 novembre 2026 : elle réunit la charte, le site premierservice.club, les publications réseaux sociaux, les scripts vidéo et les fiches des fondateurs.
+
+## Comment s’en servir
+
+1. Lire ce brand book, puis la section qui correspond au support : **Le site**, **Réseaux sociaux**, **Audiovisuel**, **Les fondateurs**, **Les Argonautes**, **Saison 1**, **Produire un support**.
+2. Prendre les valeurs dans `tokens.json` (couleurs, typographie, espacements, rayons, ombres, animation), jamais à l’œil.
+3. Poser les fichiers des groupes d’assets tels quels : logos, sigle, portraits, cartouche. Rien ne se redessine.
+4. Reproduire les composants (Logo, Badge, PortraitATable, PortraitAnime, PortraitFondateur, FormatRendezVous, CarteInvite, CarteRendezVous, Bouton, SlideCarrousel, CartoucheArgonautes) : chacun a ses règles et un aperçu.
+5. Finir **chaque** support par le cartouche Les Argonautes.
+
+Sources : dépôt GitHub `iabdes/premierservice` (fichiers sources, scripts de génération, charte en texte `charte-graphique/CHARTE.md`), présentation de la charte (35 diapositives), site premierservice.club, dossier Drive « Premier Service » (Brand Design, Rendu audiovisuel, Community Management).
 
 ## Le principe à retenir
 
-Une table, onze places. Dix chaises bleues pour les étudiants, une chaise rouge en haut pour l’invité. Tout le système en découle : le sigle est cette table, le portrait de l’invité prend la place du plateau, le rouge ne marque que l’invité.
+Une table, onze places. Dix chaises bleues pour les étudiants, une chaise rouge en haut pour l’invité. Tout le système en découle : le sigle est cette table, le portrait de l’invité prend la place du plateau, le rouge ne marque que l’invité et la date du rendez-vous.
 
-## Le ton
+## L’esprit et le ton
 
-- Écrire en français, phrases courtes, au présent. Pas de majuscules de titre à l’anglaise : « Le dîner et le petit-déjeuner », pas « Le Dîner Et Le Petit-Déjeuner ».
-- Nommer les choses comme elles sont : « Dîner, lundi 9 novembre, place Beauvau ». Un rendez-vous se désigne par sa date, jamais par un numéro. La formule de référence : « Dix étudiants, un invité, une table. » (« une invitée » pour une femme). La règle : « Ce qui se dit à table reste à table. »
-- Typographie française : guillemets « », espace insécable avant : ; ? !, dates en toutes lettres dans les publications (« 9 novembre »), au format 09.11 dans les grilles.
-- Pas d’emoji, pas de point d’exclamation, pas de slogan. Les fonctions des invités sont celles du programme officiel, vérifiées avant diffusion.
-- Neutralité : chaque invité est présenté de la même façon, sans qualificatif.
+- **Sobre, direct, chaleureux.** Phrases courtes, au présent, une idée par phrase, vouvoiement dans les publications. Pas de jargon administratif, pas de slogan, pas de point d’exclamation.
+- **Ce qui se dit à table reste à table.** Aucune photo, vidéo ou story pendant l’échange ; aucune citation, même anonyme, sans accord écrit. Dans les vidéos, la table est montrée avant l’arrivée des participants, puis la porte se ferme.
+- **Neutre, toujours.** Chaque invité est présenté de la même façon : nom complet, fonction du programme, sans qualificatif ni position. Formule pour les invités politiques : « Premier Service reçoit cette saison des personnalités d’horizons et de sensibilités différents. »
+- **Une conversation, pas un débouché.** Ne jamais promettre stage, réseau, accès ou recrutement. Aucun superlatif.
+- **Une seule action par support** : rejoindre le club, ou s’inscrire à un rendez-vous, sur Alumni Platform.
+- **Les faits viennent du programme** (section Saison 1). Ce qui manque reste entre crochets (`[Lieu à confirmer]`) et ne part pas en publication.
+- Typographie française : guillemets « », apostrophe ’, espace insécable avant : ; ? ! ; dates en toutes lettres en publication (« mercredi 2 décembre »), au format 02.12 dans les grilles. Un rendez-vous se désigne par sa date, jamais par un numéro.
+
+### Vocabulaire de la marque
+
+| Dire | Ne pas dire |
+| --- | --- |
+| une table, dix étudiants, un invité (une invitée) | un panel, une conférence, un événement networking |
+| un dîner, un petit-déjeuner | un afterwork, un brunch |
+| à huis clos | en off, confidentiel |
+| la saison 1, la Cohorte d’automne, une session | l’édition, le programme VIP |
+| 10 étudiants par session, dix places | places limitées, exclusif |
+| le club, rejoindre le club | la communauté, le réseau |
+| candidater, s’inscrire sur Alumni Platform | postuler, réserver |
+| le chevalet Premier Service | le carton de table |
+
+Phrases de référence : « Dix étudiants, un invité, une table. » · « Ce qui se dit à table reste à table. » · « Nous organisons les rencontres que nous aurions aimé qu’on nous propose. » · « À chaque table, une seule règle : parler vrai. » · « Le lendemain commence à table. »
 
 ## Le logo
 
 - « Premier » au pinceau en `ciel`, « SERVICE » en capitales Outfit ExtraBold en `bleu-marine`. SERVICE se loge sous « Premier » ; le P descend le long du S.
-- Toujours depuis les fichiers du groupe Logos (`premier-service_logo_couleur`, `_horizontal_`, `_vertical_`). Le texte est vectorisé : rien à recomposer.
-- Sur `papier` ou `blanc` : version couleur. Sur `bleu-marine`, une photo ou un fond sombre : version blanche (le ciel n’y est pas lisible).
-- Zone de protection : la hauteur des capitales de SERVICE (x), sur les quatre côtés. Taille minimale : 30 mm imprimé, 160 px à l’écran ; en dessous, le badge.
+- Toujours depuis les fichiers du groupe Logos (seul, horizontal, vertical ; couleur ou blanc). Le texte est vectorisé : rien à recomposer.
+- Sur `papier` ou `blanc` : version couleur. Sur `bleu-marine`, une photo ou un fond sombre : version blanche.
+- Zone de protection : la hauteur des capitales de SERVICE, sur les quatre côtés. Taille minimale : 30 mm imprimé, 160 px à l’écran ; en dessous, le badge. Dans un carrousel : 200 px de large, à 72 px du bord gauche et 60 px du haut.
 - Interdits : déformer, pivoter, recolorer, ajouter ombre, contour ou dégradé, recomposer « Premier » dans une autre police, poser la version couleur sur un fond rouge ou bleu.
 
 ## Le sigle, le badge, l’icône
 
 - Le sigle est la table vue de dessus : disque `sigle-table`, onze chaises à intervalles égaux, la chaise `sigle-invite` toujours en haut. Ne jamais changer le nombre de chaises ni la place de la rouge.
-- Le badge (PREMIER en haut en bleu-marine, SERVICE en bas en rouge) sert aux formats ronds et carrés : avatar, tampon, chevalet. Jamais le logo et le badge sur le même support.
-- L’icône (table blanche sur carré bleu-marine, `radius-icone`) sert uniquement à l’application et à l’icône du site.
+- En filigrane : sur les couvertures bleu-marine, le sigle en `bleu-filigrane`, coupé par le bord droit, chaise rouge conservée.
+- Le badge (PREMIER en haut, SERVICE en bas en rouge) sert aux formats ronds : avatar, tampon, chevalet. Jamais le logo et le badge sur le même support.
+- L’icône (table blanche sur carré bleu-marine, `radius-icone`) : application, favicon (fond blanc pour le favicon du site).
 
 ## Les couleurs
 
-Quatre couleurs de marque, chacune avec un rôle : `bleu-marine` porte la marque, `ciel` ne sert qu’au mot « Premier », `rouge` ne marque que l’invité (chaise, numéro, date), `papier` fait les fonds. Respecter les parts : `part-fond`, `part-bleu`, `part-accents`. Les thèmes Papier et Bleu correspondent aux deux fonds des supports ; utiliser `surface`, `titre`, `texte`, `texte-second`, `mention`, `accent`, qui changent avec eux. Sur bleu, l’accent passe en `papier`.
+`bleu-marine` porte la marque, `ciel` ne sert qu’au mot « Premier », `rouge` ne marque que l’invité (chaise, date, « Prochain », un chiffre), `papier` fait les fonds, `blanc` les cartes, `encre` le texte, `gris` le texte secondaire. En petit texte rouge, `rouge-texte`. Parts : `part-fond` 60 %, `part-bleu` 30 %, `part-accents` 10 % au plus. Thèmes Papier et Bleu : utiliser `surface`, `surface-carte`, `titre`, `texte`, `texte-second`, `mention`, `accent`, qui changent avec eux.
+
+Les couleurs des Argonautes (`argo-creme`, `argo-noir`, `argo-rouge`, `argo-galet`) ne vivent que dans leur cartouche et leurs fichiers.
 
 ## La typographie
 
-- Outfit (Google Fonts, libre) pour tout le texte : `titre`, `accroche`, `texte`, `mention` en présentation ; `nom-invite`, `numero-rdv`, `fonction`, `quand-ou` en publication ; les styles `ecran-*` sur le web.
-- Breathing ne sert qu’au mot « Premier » du logo, déjà vectorisé. Licence personnelle seulement : acheter la licence commerciale auprès de Din Studio avant toute diffusion publique.
-- Mettre en valeur par la graisse ou la couleur, jamais par une taille de plus.
+- Outfit (Google Fonts, libre) pour tout le texte. Titres ExtraBold 800, interlettrage −0,02 em ; texte Regular ; étiquettes SemiBold. Pas d’italique, pas de capitales espacées, pas de mot coloré dans un titre.
+- Groupes de styles : présentations, publications, carrousels (`post-*`), site (`site-*`), écran. Jamais sous 32 px sur un visuel de 1080 px, 24 px en présentation, 14 px à l’écran.
+- Breathing ne sert qu’au mot « Premier » du logo, déjà vectorisé. Licence personnelle seulement : licence commerciale à acheter avant diffusion publique.
 
 ## Les portraits
 
-- Une illustration (portrait peint, fond crème, buste de face), jamais une photo brute. Fichiers du groupe Portraits.
-- À table : le portrait est découpé en disque (`radius-rond`) à la place du plateau, entouré des onze chaises, la rouge au-dessus. Fichiers du groupe Portraits-a-table ; composant PortraitATable.
-- Animé : chaque invité a un portrait animé de 3 secondes (même cadrage, léger mouvement du visage), en boucle. Fichiers du groupe Portraits-animes (480 px, MP4 sans son) ; originaux 960 px dans le dépôt GitHub. Composant PortraitAnime.
-- Le portrait animé se lit toujours muet, en boucle, sans commandes, avec le portrait fixe correspondant en image d’attente. Si le visiteur a demandé de réduire les animations, afficher le portrait fixe seul. Jamais plus de six portraits animés visibles en même temps.
-- Chaque portrait porte le nom complet et la fonction du programme, dans cet ordre. Voir la section Saison 1.
+- **Invités** : illustration peinte, fond crème, buste de face, jamais une photo brute. À table : portrait en disque à la place du plateau, onze chaises autour, la rouge au-dessus (PortraitATable). Animé : boucle de 3 s, muette, au ralenti (`vitesse-portrait-anime`), deux au plus en même temps (PortraitAnime). Rendez-vous passé : noir et blanc.
+- **Fondateurs** : dessin au crayon et à la gouache dans un médaillon bleu-marine au filet ivoire (PortraitFondateur). Voir la section Les fondateurs.
+- Chaque portrait porte le nom complet et la fonction du programme, dans cet ordre. Accord de chaque invité sur son portrait avant diffusion.
 
 ## Les formats de rendez-vous
 
-- Deux formats : le dîner (le soir, pictogramme lune) et le petit-déjeuner (le matin, pictogramme soleil). Composant FormatRendezVous.
-- Toujours écrire format, date, lieu dans cet ordre : « Petit-déjeuner, 18 novembre, [lieu] ».
+Le dîner (le soir, lune) et le petit-déjeuner (le matin, soleil). Toujours format, date, lieu, dans cet ordre : « Dîner, mercredi 2 décembre, [lieu] ». Composant FormatRendezVous ; pastille de format dans CarteRendezVous.
 
 ## Les supports
 
-- Publication Instagram 1080 × 1350 sur `papier` ; story 1080 × 1920 sur `papier` ; LinkedIn 1200 × 627 et affiche A3 sur `bleu-marine`. Modèles dans le groupe Publications, projections dans Projections.
-- Présentations 1920 × 1080 : marges `space-marge`, titre en haut à gauche, pied de page en `mention` à 64 px du bas.
-- Partenaire : la mention « Avec le soutien des » suivie du logo des Argonautes, en bas, plus petit que le logo Premier Service. Voir la section Les Argonautes et le composant MentionPartenaire.
+| Support | Format | Section |
+| --- | --- | --- |
+| Site | premierservice.club | Le site |
+| Carrousel Instagram, PDF LinkedIn | 1080 × 1350 | Réseaux sociaux |
+| Story, Reel, film | 1080 × 1920 | Réseaux sociaux, Audiovisuel |
+| Image LinkedIn | 1200 × 627 | groupe Publications |
+| Affiche | A3 | groupe Publications |
+| Présentation | 1920 × 1080, marges `space-marge` | Produire un support |
+| Fiche de script, storyboard, document de production | A4, charte des Argonautes | Audiovisuel |
+
+## Le cartouche Les Argonautes (obligatoire)
+
+Chaque support se termine par le soutien des Argonautes : dernière slide d’un carrousel, carton de fin d’une vidéo, dernière diapositive d’une présentation publique, dernière ligne d’une légende. Fond `argo-creme`, tout centré : « Ce projet est soutenu par », le logo des Argonautes, « Cabinet de conseil et d’exécution dédié au secteur public. », l’étiquette lesargos.fr. Composant CartoucheArgonautes, section Les Argonautes.
 
 ## Iconographie
 
-Pas de jeu d’icônes. Les seuls signes sont le sigle, le badge, l’icône et les deux pictogrammes de format (lune, soleil), dessinés dans le composant FormatRendezVous en `bleu-marine` et `rouge`.
+Pas de jeu d’icônes. Les seuls signes sont le sigle, le badge, l’icône, la lune et le soleil des formats, le cadenas du huis clos et la flèche des actions (« Faites glisser → », « S’inscrire → »), dessinés au trait rond.
