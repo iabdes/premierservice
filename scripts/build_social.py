@@ -92,34 +92,62 @@ def cover(title, sub):
     return "".join(o)
 
 def argo_card(prefix, i, n, tall=False):
-    """Carte de fin : charte Gréement des Argonautes posée dans le cadre Premier Service."""
+    """Carte de fin minimaliste : phrase centrée, logo, site en étiquette."""
     Hh = 1920 if tall else 1350
-    s = 1.0
-    o = [logo(72, 60, 200, False)]
-    py = 300 if tall else 230
-    o.append(f'<rect x="{M}" y="{py-11}" width="44" height="3" fill="{ARGO_T}"/>' + T(PLEX, "PARTENAIRE DU PROJET", 24, M + 64, py, ARGO_T, track=0.14))
-    iy = py + 44; ih = 820 if tall else 500; iw = W - 2*M
-    sc = max(iw * 1.55 / 1672, ih * 1.05 / 941); vw, vh = 1672*sc, 941*sc
-    fx, fy = 0.70, 0.70
-    ix = M + iw/2 - fx*vw; iy2 = iy + ih/2 - fy*vh
-    ix = min(M, max(M + iw - vw, ix)); iy2 = min(iy, max(iy + ih - vh, iy2))
-    o.append(f'<clipPath id="fr{prefix}"><rect x="{M}" y="{iy}" width="{iw}" height="{ih}" rx="24"/></clipPath>'
-             f'<image clip-path="url(#fr{prefix})" href="{CONSEIL}" x="{ix:.1f}" y="{iy2:.1f}" width="{vw:.1f}" height="{vh:.1f}"/>')
-    y = iy + ih + (110 if tall else 92)
-    o.append(T(SEMI, "Ce projet est soutenu par", 50 if tall else 46, M, y, ABYSSE))
-    lw = 700 if tall else 600
-    o.append(f'<image href="{ARGO_C}" x="{M-8}" y="{y + 34}" width="{lw}" height="{lw*AR:.0f}"/>')
-    y = y + 34 + lw*AR + (60 if tall else 44)
-    o.append(f'<rect x="{M}" y="{y:.0f}" width="{iw}" height="2" fill="{ABYSSE}"/><rect x="{M}" y="{y+7:.0f}" width="{iw}" height="2" fill="{ABYSSE}"/>')
-    t, y = para(REG, "Cabinet de conseil et d’exécution dédié au secteur public.", 36 if tall else 33, M, y + 70, GALET, iw, 1.3); o.append(t)
-    y += 84 if tall else 72
-    o.append(T(SEMI, "lesargos.fr", 46 if tall else 40, M, y, ARGO_T))
-    tw = wid(SEMI, "lesargos.fr", 46 if tall else 40)
-    o.append(arrow(M + tw + 22, y - 14, 34, ARGO_T, 4))
+    cy = Hh/2 - (10 if tall else 30); f = 1.3 if tall else 1.0
+    o = [f'<g transform="translate({W/2},{cy}) scale({f}) translate({-W/2},{-cy})">']
+    o.append(T(SEMI, "Ce projet est soutenu par", 46, W/2, cy - 150, ABYSSE, "middle"))
+    lw = 640
+    o.append(f'<image href="{ARGO_C}" x="{W/2 - lw/2:.0f}" y="{cy - 105:.0f}" width="{lw}" height="{lw*AR:.0f}"/>')
+    yy = cy - 105 + lw*AR + 96
+    for k, l in enumerate(["Cabinet de conseil et d’exécution", "dédié au secteur public."]):
+        o.append(T(REG, l, 38, W/2, yy + k*52, GALET, "middle"))
+    yy += 52 + 70
+    lab = "lesargos.fr"; tw = wid(SEMI, lab, 36); pw = tw + 64 + 46
+    x0 = W/2 - pw/2
+    o.append(f'<rect x="{x0:.0f}" y="{yy:.0f}" width="{pw:.0f}" height="76" rx="38" fill="{ABYSSE}"/>')
+    o.append(T(SEMI, lab, 36, x0 + 32, yy + 51, WHITE))
+    o.append(arrow(x0 + 32 + tw + 18, yy + 38, 26, ARGO, 3.5))
+    o.append('</g>'); o.append(logo(72, 60, 200, False))
     if not tall: o.append(progress(i, n, False))
     global H; H0 = H; H = Hh
     p = save(f"{prefix}-{i:02d}" if not tall else prefix, "".join(o), ECUME); H = H0
     return p
+
+def carton(slug, nom, fonction, jour, num, mois, fmt):
+    """Carte invité inspirée des cartons du site : portrait, pastille format, étiquette date, ticket."""
+    X, Y, CW, CH, R = M, 190, W - 2*M, 1050, 40
+    PH = 600
+    img = b64(f"ds-up/portraits/premier-service_portrait_{slug}.jpg", "image/jpeg")
+    o = ['<defs><filter id="ombre" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="20" flood-color="#1E2F86" flood-opacity="0.16"/></filter>'
+         '<filter id="ombre2" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1E2F86" flood-opacity="0.22"/></filter></defs>']
+    o.append(f'<rect x="{X}" y="{Y}" width="{CW}" height="{CH}" rx="{R}" fill="{WHITE}" filter="url(#ombre)"/>')
+    o.append(f'<clipPath id="cp"><path d="M{X} {Y+PH}V{Y+R}a{R} {R} 0 0 1 {R} -{R}H{X+CW-R}a{R} {R} 0 0 1 {R} {R}V{Y+PH}Z"/></clipPath>')
+    o.append(f'<image clip-path="url(#cp)" href="{img}" x="{X}" y="{Y + PH/2 - CW/2 + 40:.0f}" width="{CW}" height="{CW}" preserveAspectRatio="xMidYMid slice"/>')
+    # pastille format
+    pt = fmt; pw = wid(SEMI, pt, 32) + 110
+    px = X + CW - 28 - pw; py = Y + 28
+    if fmt == "Dîner":
+        o.append(f'<rect x="{px:.0f}" y="{py}" width="{pw:.0f}" height="68" rx="34" fill="{BLUE}"/>' + moon(px + 26, py + 17, 34, WHITE) + T(SEMI, pt, 32, px + 74, py + 46, WHITE))
+    else:
+        o.append(f'<rect x="{px:.0f}" y="{py}" width="{pw:.0f}" height="68" rx="34" fill="{WHITE}"/>' + sun(px + 26, py + 17, 34, BLUE) + T(SEMI, pt, 32, px + 74, py + 46, BLUE))
+    # étiquette date à cheval
+    tx, ty, tw_, th = X + 40, Y + PH - 150, 170, 196
+    o.append(f'<rect x="{tx}" y="{ty-70}" width="{wid(XB, "Prochain", 28)+44:.0f}" height="52" rx="26" fill="{RED}"/>' + T(XB, "Prochain", 28, tx + 22, ty - 34, WHITE))
+    o.append(f'<rect x="{tx}" y="{ty}" width="{tw_}" height="{th}" rx="32" fill="{WHITE}" filter="url(#ombre2)"/>')
+    o.append(T(SEMI, jour, 30, tx + tw_/2, ty + 50, "#C42630", "middle") + T(XB, num, 92, tx + tw_/2, ty + 140, BLUE, "middle") + T(MED, mois, 30, tx + tw_/2, ty + 178, GRIS, "middle"))
+    # ticket
+    ky = Y + PH + 96
+    o.append(f'<line x1="{X+36}" y1="{ky}" x2="{X+CW-36}" y2="{ky}" stroke="#E6E1D6" stroke-width="4" stroke-dasharray="14 12"/>')
+    o.append(f'<circle cx="{X}" cy="{ky}" r="22" fill="{PAPER}"/><circle cx="{X+CW}" cy="{ky}" r="22" fill="{PAPER}"/>')
+    # texte
+    o.append(T(XB, nom, 92, X + 48, ky + 130, BLUE))
+    t, y = para(REG, fonction, 40, X + 48, ky + 196, GRIS, CW - 96, 1.25); o.append(t)
+    by = Y + CH - 56
+    o.append(T(XB, "Dix places, à huis clos", 32, X + 48, by, "#C42630"))
+    sw = wid(SEMI, "S’inscrire", 34)
+    o.append(T(SEMI, "S’inscrire", 34, X + CW - 48 - 40 - sw, by, BLUE) + arrow(X + CW - 48 - 28, by - 12, 28, BLUE, 3.5))
+    return "".join(o)
 
 files = {}
 # ---------- C1 teasing ----------
@@ -193,12 +221,7 @@ files["c3"] = c
 
 # ---------- C4 invité ----------
 n = 5; c = []
-o = [frame(1, n)]
-o.append(T(SEMI, "Prochain rendez-vous", 40, 540, 250, RED, "middle"))
-o.append(at_table("olivier-faure", 540, 620, 660))
-o.append(T(XB, "Olivier Faure", 100, 540, 1100, BLUE, "middle"))
-o.append(T(REG, "Premier secrétaire du Parti socialiste", 40, 540, 1166, INK, "middle"))
-o.append(swipe(False))
+o = [carton("olivier-faure", "Olivier Faure", "Premier secrétaire du Parti socialiste", "MAR", "17", "NOV", "Dîner"), frame(1, n)]
 c.append(save("c4-01", "".join(o)))
 o = [frame(2, n, True)]
 o.append(f'<rect x="{M}" y="230" width="904" height="960" rx="32" fill="{WHITE}"/>')
