@@ -9,7 +9,7 @@ Ce document est la référence en texte de la charte. Il fait foi pour toute pro
 Premier Service réunit **dix étudiants et une personnalité de la vie publique** autour d’une table, **à huis clos**, pour un **dîner** (le soir) ou un **petit-déjeuner** (le matin). Après la table, les participants rejoignent **le club** sur Alumni Platform.
 
 - Fondateurs : Thawben Berka, Lara Fourneau, Louis Pemot (de gauche à droite sur la photo d’équipe).
-- Soutien : Les Argonautes, cabinet de conseil et d’exécution dédié au secteur public (lesargos.fr).
+- Soutien : Les Argonautes, un cabinet de conseil et d’exécution dédié au secteur public (lesargos.fr).
 - Site : premierservice.club. Club : alumniplatform.net/join/premierservice.
 - Phrase des fondateurs : « Nous organisons les rencontres que nous aurions aimé qu’on nous propose. » Règle commune : « À chaque table, une seule règle : parler vrai. »
 
@@ -122,7 +122,7 @@ Chaque support se termine par le soutien des Argonautes.
   - Tout est **centré** : « Ce projet est soutenu par » (Outfit SemiBold, noir `#010101`) ; le **logo des Argonautes** (fichier fourni, jamais retapé) ; « Cabinet de conseil et d’exécution dédié au secteur public. » en gris `#5C5A56` ; l’étiquette **lesargos.fr** en blanc sur pilule noire, avec une flèche rouge `#F10F23` (seul rouge de la carte).
   - Le logo Premier Service en haut à gauche et la barre de progression restent, pour rattacher la carte à la série.
   - Ni gravure, ni encadré, ni autre élément.
-- **Légende** : « Ce projet est soutenu par Les Argonautes, cabinet de conseil et d’exécution dédié au secteur public. » LinkedIn : identifier la page Les Argonautes + « lesargos.fr ». Instagram : identifier le compte + « lien en bio ».
+- **Légende** : « Ce projet est soutenu par Les Argonautes, un cabinet de conseil et d’exécution dédié au secteur public. » LinkedIn : identifier la page Les Argonautes + « lesargos.fr ». Instagram : identifier le compte + « lien en bio ».
 - Fichiers : `partenaire/les-argonautes/`, modèles dans `publications/reseaux/`.
 
 ## 11. Ligne éditoriale réseaux sociaux

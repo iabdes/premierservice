@@ -30,7 +30,7 @@ Premier Service arrive bientôt.
 
 Une initiative de [@Louis Pemot], [@Lara Fourneau] et [@Thawben Berka].
 
-Ce projet est soutenu par [@Les Argonautes], cabinet de conseil et d’exécution dédié au secteur public. → lesargos.fr
+Ce projet est soutenu par [@Les Argonautes], un cabinet de conseil et d’exécution dédié au secteur public. → lesargos.fr
 
 #ServicePublic #IntérêtGénéral #Étudiants #Engagement
 
@@ -43,7 +43,7 @@ Les étudiants ont des questions. Celles et ceux qui ont exercé ont des répons
 Dix étudiants. Une personnalité publique. À huis clos.
 Bientôt.
 
-Soutenu par [@compte_instagram_argonautes], cabinet de conseil et d’exécution dédié au secteur public. Lien en bio.
+Soutenu par [@compte_instagram_argonautes], un cabinet de conseil et d’exécution dédié au secteur public. Lien en bio.
 
 #PremierService #ServicePublic #IntérêtGénéral #Étudiants #Engagement #FonctionPublique
 
@@ -64,7 +64,7 @@ Le film raconte pourquoi nous l’avons créé.
 
 La saison 1 réunit douze invités en novembre et décembre 2026. Pour en faire partie : alumniplatform.net/join/premierservice
 
-Ce projet est soutenu par [@Les Argonautes], cabinet de conseil et d’exécution dédié au secteur public. → lesargos.fr
+Ce projet est soutenu par [@Les Argonautes], un cabinet de conseil et d’exécution dédié au secteur public. → lesargos.fr
 
 #ServicePublic #IntérêtGénéral #Étudiants
 
@@ -76,7 +76,7 @@ Une table, dix étudiants, une personnalité publique. Ce qui se dit à table re
 
 Saison 1 : douze invités, novembre et décembre 2026. Rejoindre le club : lien en bio.
 
-Soutenu par [@compte_instagram_argonautes], cabinet de conseil et d’exécution dédié au secteur public.
+Soutenu par [@compte_instagram_argonautes], un cabinet de conseil et d’exécution dédié au secteur public.
 
 #PremierService #ServicePublic #Étudiants #Engagement #IntérêtGénéral
 
@@ -99,7 +99,7 @@ Premier Service, c’est quoi ? En cinq images.
 
 Rejoindre le club : alumniplatform.net/join/premierservice
 
-Ce projet est soutenu par [@Les Argonautes], cabinet de conseil et d’exécution dédié au secteur public. → lesargos.fr
+Ce projet est soutenu par [@Les Argonautes], un cabinet de conseil et d’exécution dédié au secteur public. → lesargos.fr
 
 #ServicePublic #IntérêtGénéral #Étudiants #Engagement
 
@@ -112,7 +112,7 @@ Et après la table, un club pour rester en lien.
 
 Rejoindre le club : lien en bio.
 
-Soutenu par [@compte_instagram_argonautes], cabinet de conseil et d’exécution dédié au secteur public.
+Soutenu par [@compte_instagram_argonautes], un cabinet de conseil et d’exécution dédié au secteur public.
 
 #PremierService #ServicePublic #Étudiants #Engagement #IntérêtGénéral #FonctionPublique
 
@@ -140,7 +140,7 @@ S’inscrire : alumniplatform.net/join/premierservice
 
 Premier Service reçoit cette saison des personnalités d’horizons et de sensibilités différents.
 
-Ce projet est soutenu par [@Les Argonautes], cabinet de conseil et d’exécution dédié au secteur public. → lesargos.fr
+Ce projet est soutenu par [@Les Argonautes], un cabinet de conseil et d’exécution dédié au secteur public. → lesargos.fr
 
 #ServicePublic #Étudiants #Engagement
 
@@ -152,6 +152,6 @@ Un dîner, mardi 17 novembre, [lieu]. Dix places, à huis clos.
 
 Une question à lui poser ? Inscrivez-vous sur Alumni Platform : lien en bio.
 
-Soutenu par [@compte_instagram_argonautes], cabinet de conseil et d’exécution dédié au secteur public.
+Soutenu par [@compte_instagram_argonautes], un cabinet de conseil et d’exécution dédié au secteur public.
 
 #PremierService #ServicePublic #Étudiants #Engagement

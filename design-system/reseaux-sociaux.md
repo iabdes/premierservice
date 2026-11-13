@@ -41,7 +41,7 @@ Structure d’un carrousel : couverture → trois à cinq slides de contenu → 
 - LinkedIn : liens dans le texte, identifier la page Les Argonautes et les fondateurs, 3 ou 4 hashtags, aucun émoji.
 - Instagram : « lien en bio », identifier le compte des Argonautes, 5 ou 6 hashtags, deux émojis au plus.
 - Hashtags de base : #PremierService #ServicePublic #IntérêtGénéral #Étudiants #Engagement #FonctionPublique.
-- Dernière ligne, toujours : « Ce projet est soutenu par Les Argonautes, cabinet de conseil et d’exécution dédié au secteur public. » + lesargos.fr (LinkedIn) ou « lien en bio » (Instagram).
+- Dernière ligne, toujours : « Ce projet est soutenu par Les Argonautes, un cabinet de conseil et d’exécution dédié au secteur public. » + lesargos.fr (LinkedIn) ou « lien en bio » (Instagram).
 
 ## Piliers éditoriaux
 
