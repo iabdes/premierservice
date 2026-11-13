@@ -48,7 +48,7 @@ Police : Outfit (Google Fonts) 400 à 800. Titres 800, interlettrage −0,02 em.
 3. **Le principe** : trois cartes animées (au chargement puis au survol) : « Une table » (la table apparaît, les dix chaises bleues une à une, la rouge en dernier), « À huis clos » (le cadenas se ferme, une bulle « Ce qui se dit à table reste à table. » apparaît), « Deux formats » (fenêtre de ciel : la lune descend, le soleil se lève).
 4. **Le prochain invité** : calculé à la date du jour ; grand portrait flottant, pastille rouge « Aujourd’hui / Demain / Dans N jours », « Le prochain invité · rendez-vous n°N », nom en très grand, fonction, format avec lune ou soleil et date complète (« Dîner, mardi 17 novembre »), boutons « Candidater pour ce rendez-vous » et « Toute la saison ».
 5. **Saison 1, douze rendez-vous** : filtre Tous / Dîners / Petits-déjeuners ; cartes verticales (portrait carré, pastille date · format, « Rendez-vous n°N », nom, fonction) ; rendez-vous passés en noir et blanc avec la pastille « Passé ».
-6. **Prendre place à la table** (candidater) : texte, critères `[À PRÉCISER]`, bouton « Candidater sur Alumni Platform » (`[URL_ALUMNI_PLATFORM]`), trois étapes reliées par un trait.
+6. **Prendre place à la table** (candidater) : texte, critères `[À PRÉCISER]`, bouton « Candidater sur Alumni Platform » (https://alumniplatform.net/join/premierservice), trois étapes reliées par un trait.
 7. **Après la table, le club** : annuaire, événements, lettre, groupe WhatsApp.
 8. **Le mot des fondateurs** : trois bulles flottantes (initiales en attendant les photos) avec nom en pastille ; texte de la maquette (à faire valider par les fondateurs).
 9. **Pied de page** sombre, avec la **carte partenaire** crème à cheval sur la section précédente : logo Les Argonautes, filet, « Ce projet est soutenu par Les Argonautes, cabinet de conseil et d’exécution dédié au secteur public. », bouton « lesargos.fr » (https://lesargos.fr, nouvel onglet). Puis logo blanc, navigation, contact `[ADRESSE E-MAIL]`, liens Mentions légales, Confidentialité, Accessibilité (pages à créer avec des emplacements `[À REMPLIR]`).
@@ -72,4 +72,4 @@ Police : Outfit (Google Fonts) 400 à 800. Titres 800, interlettrage −0,02 em.
 
 ## Emplacements à remplir
 
-`[URL_VIDEO]`, `[URL_ALUMNI_PLATFORM]`, lien WhatsApp, critères d’éligibilité, photos des fondateurs, adresse de contact, mentions légales (éditeur, hébergeur), politique de confidentialité, déclaration d’accessibilité.
+`[URL_VIDEO]`, https://alumniplatform.net/join/premierservice, lien WhatsApp, critères d’éligibilité, photos des fondateurs, adresse de contact, mentions légales (éditeur, hébergeur), politique de confidentialité, déclaration d’accessibilité.
