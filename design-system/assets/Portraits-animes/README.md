@@ -1,0 +1,1 @@
+Les douze portraits animés de la saison 1 : boucle de 3 s, 480 × 480, MP4 H.264 sans son. Lire en muet, en boucle, sans commandes (`autoplay muted loop playsinline`), avec le portrait fixe du groupe Portraits comme image d’attente (`poster`). Originaux 960 px dans le dépôt GitHub (`portraits/animes/`).

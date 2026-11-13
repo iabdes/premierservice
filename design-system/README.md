@@ -7,8 +7,8 @@ Une table, onze places. Dix chaises bleues pour les étudiants, une chaise rouge
 ## Le ton
 
 - Écrire en français, phrases courtes, au présent. Pas de majuscules de titre à l’anglaise : « Le dîner et le petit-déjeuner », pas « Le Dîner Et Le Petit-Déjeuner ».
-- Nommer les choses comme elles sont : « Rendez-vous n°1 », « Dîner, 9 novembre, place Beauvau ». La formule de référence : « Dix étudiants, un invité, une table. » (« une invitée » pour une femme). La règle : « Ce qui se dit à table reste à table. »
-- Typographie française : guillemets « », espace insécable avant : ; ? !, « n°1 », dates en toutes lettres dans les publications (« 9 novembre »), au format 09.11 dans les grilles.
+- Nommer les choses comme elles sont : « Dîner, lundi 9 novembre, place Beauvau ». Un rendez-vous se désigne par sa date, jamais par un numéro. La formule de référence : « Dix étudiants, un invité, une table. » (« une invitée » pour une femme). La règle : « Ce qui se dit à table reste à table. »
+- Typographie française : guillemets « », espace insécable avant : ; ? !, dates en toutes lettres dans les publications (« 9 novembre »), au format 09.11 dans les grilles.
 - Pas d’emoji, pas de point d’exclamation, pas de slogan. Les fonctions des invités sont celles du programme officiel, vérifiées avant diffusion.
 - Neutralité : chaque invité est présenté de la même façon, sans qualificatif.
 
@@ -40,6 +40,8 @@ Quatre couleurs de marque, chacune avec un rôle : `bleu-marine` porte la marque
 
 - Une illustration (portrait peint, fond crème, buste de face), jamais une photo brute. Fichiers du groupe Portraits.
 - À table : le portrait est découpé en disque (`radius-rond`) à la place du plateau, entouré des onze chaises, la rouge au-dessus. Fichiers du groupe Portraits-a-table ; composant PortraitATable.
+- Animé : chaque invité a un portrait animé de 3 secondes (même cadrage, léger mouvement du visage), en boucle. Fichiers du groupe Portraits-animes (480 px, MP4 sans son) ; originaux 960 px dans le dépôt GitHub. Composant PortraitAnime.
+- Le portrait animé se lit toujours muet, en boucle, sans commandes, avec le portrait fixe correspondant en image d’attente. Si le visiteur a demandé de réduire les animations, afficher le portrait fixe seul. Jamais plus de six portraits animés visibles en même temps.
 - Chaque portrait porte le nom complet et la fonction du programme, dans cet ordre. Voir la section Saison 1.
 
 ## Les formats de rendez-vous
