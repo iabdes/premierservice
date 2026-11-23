@@ -28,7 +28,7 @@ Ce dépôt rassemble tous les éléments de l’identité, version du 13 novembr
 | `charte-graphique/CHARTE.md` | **La charte complète en texte** : esprit, logo, couleurs, typo, portraits, carte de rendez-vous, gabarits, cartouche Les Argonautes, contrôle. |
 | `agent/premier-service-studio/` | Compétence d’agent graphique et community manager (SKILL.md). |
 | `publications/reseaux/` | Ligne éditoriale : 4 premiers posts (carrousels PNG, PDF LinkedIn, couverture et carton vidéo, `LEGENDES.md`). |
-| `portraits/animes/` | Les douze portraits animés (boucle de 3 s, 960 px, MP4) ; versions web 480 px sans son et images d’attente dans `portraits/animes/web/`. |
+| `portraits/animes/` | Les portraits animés des invités (boucle de 3 s ; 12 s pour Emmanuel Grégoire, 960 px, MP4) ; versions web 480 px sans son et images d’attente dans `portraits/animes/web/`. |
 | `portraits/web/` | Portraits en 900 px, JPG, pour le web. |
 | `scripts/` | Scripts Python qui génèrent logos, sigle, publications et portraits (fontTools, uharfbuzz, rsvg-convert). Chemins à adapter. |
 

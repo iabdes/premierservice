@@ -21,5 +21,5 @@ Mises à jour : 13 novembre, le dîner avec Jérôme Guedj passe au 2 décembre.
 
 - Le numéro sert au classement interne ; en public, un rendez-vous se désigne par sa date (« Dîner, vendredi 18 décembre »).
 - Le 17 décembre, le petit-déjeuner précède le dîner.
-- Fichiers : `premier-service_portrait_<prénom-nom>` (illustration), `premier-service_portrait-a-table_<prénom-nom>` (à table), `premier-service_portrait-anime_<prénom-nom>` (animé ; pas encore de version animée pour Emmanuel Grégoire).
+- Fichiers : `premier-service_portrait_<prénom-nom>` (illustration), `premier-service_portrait-a-table_<prénom-nom>` (à table), `premier-service_portrait-anime_<prénom-nom>` (animé).
 - Ne pas attribuer un lieu à un rendez-vous tant qu’il n’est pas confirmé.
