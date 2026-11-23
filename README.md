@@ -48,15 +48,15 @@ Ce dépôt rassemble tous les éléments de l’identité, version du 13 novembr
 | 1 | 09.11 | Dîner | Marie-Pierre Vedrenne |
 | 2 | 17.11 | Dîner | Olivier Faure |
 | 3 | 18.11 | Petit-déjeuner | Éric Lombard |
-| 4 | 24.11 | Dîner | Valérie Pécresse |
-| 5 | 25.11 | Petit-déjeuner | Matthieu Landon |
-| 6 | 02.12 | Dîner | Jérôme Guedj |
-| 7 | 03.12 | Dîner | Karim Zéribi |
-| 8 | 09.12 | Dîner | Agnès Buzyn |
-| 9 | 15.12 | Dîner | Jacques Attali |
-| 10 | 16.12 | Dîner | Karim Bouamrane |
-| 11 | 17.12 | Petit-déjeuner | Naïma Moutchou |
-| 12 | 17.12 | Dîner | Bernard Cazeneuve |
+| 4 | 25.11 | Petit-déjeuner | Matthieu Landon |
+| 5 | 02.12 | Dîner | Jérôme Guedj |
+| 6 | 03.12 | Petit-déjeuner | Karim Zéribi |
+| 7 | 09.12 | Dîner | Agnès Buzyn |
+| 8 | 15.12 | Dîner | Jacques Attali |
+| 9 | 16.12 | Dîner | Karim Bouamrane |
+| 10 | 17.12 | Petit-déjeuner | Naïma Moutchou |
+| 11 | 17.12 | Dîner | Bernard Cazeneuve |
+| 12 | 18.12 | Dîner | Emmanuel Grégoire |
 
 Fonctions détaillées dans `design-system/saison-1.md`, à revalider avec chaque invité avant diffusion.
 
